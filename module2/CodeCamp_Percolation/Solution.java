@@ -112,23 +112,23 @@ class Percolation {
         // is site (row, col) open?
         return arr[indexOf(row, col)];
     }
-   /**
-    * Determines if full.
-    *
-    * @param      row   The row
-    * @param      col   The col
-    *
-    * @return     True if full, False otherwise.
-    */
-    public boolean isFull(int row, int col) {
-        // is site (row, col) full?
-        return false;
+   // /**
+   //  * Determines if full.
+   //  *
+   //  * @param      row   The row
+   //  * @param      col   The col
+   //  *
+   //  * @return     True if full, False otherwise.
+   //  */
+   //  public boolean isFull(int row, int col) {
+   //      // is site (row, col) full?
+   //      return false;
 
 
 
 
 
-    }
+   //  }
     /**
     * { function_description }.
     *
