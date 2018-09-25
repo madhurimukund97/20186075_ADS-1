@@ -34,9 +34,9 @@ class Percolation {
     /**
      * Constructs the object.
      *
-     * @param      n     { parameter_description }
+     * @param      num1     { parameter_description }.
      */
-   public Percolation(final int num1) {
+    Percolation(final int num1) {
    // create n-by-n grid, with all sites blocked
 
     this.num = num1;
@@ -106,7 +106,7 @@ class Percolation {
             }
             return;
         }
-        if(col == num) {
+        if (col == num) {
             openSites(ind, ind - 1);
             return;
         }
@@ -147,7 +147,7 @@ class Percolation {
     *
     * @return     { description_of_the_return_value }
     */
-    public int numberOfOpenSites() { 
+    public int numberOfOpenSites() {
         // number of open sites
 
         return count;
@@ -157,7 +157,7 @@ class Percolation {
     *
     * @return     { description_of_the_return_value }
     */
-    public boolean percolates() {    
+    public boolean percolates() {  
     // does the system percolate?
         return weigh.connected(begin, end);
     }
@@ -186,9 +186,11 @@ public final class Solution {
         int n = Integer.parseInt(s.nextLine());
         Percolation perobj = new Percolation(n);
         while (s.hasNext()) {
-            String tokens[] = s.nextLine().split(" ");
-            perobj.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+            String[] tokens = s.nextLine().split(" ");
+            perobj.open(
+                Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
         }
-        System.out.println(perobj.percolates() && perobj.numberOfOpenSites() != 0);
+        System.out.println(
+            perobj.percolates() && perobj.numberOfOpenSites() != 0);
     }
 }
