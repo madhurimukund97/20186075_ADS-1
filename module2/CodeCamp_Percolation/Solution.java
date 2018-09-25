@@ -4,21 +4,39 @@ import java.util.Scanner;
  */
 class Percolation {
     /**
-     * { var_description }
+     * { WeightedQuickUnionUF object }.
      */
     private WeightedQuickUnionUF weigh;
+    /**
+     * { integer num }.
+     */
     private int num;
+    /**
+     * { integer size }.
+     */
     private int size;
+    /**
+     * { integer begin }.
+     */
     private int begin;
+    /**
+     * { integer end  }.
+     */
     private int end;
+    /**
+     * { integer count }.
+     */
     private int count;
+    /**
+     * { boolean arr  }.
+     */
     private boolean[] arr;
     /**
      * Constructs the object.
      *
      * @param      n     { parameter_description }
      */
-   public Percolation(int num1) {
+   public Percolation(final int num1) {
    // create n-by-n grid, with all sites blocked
 
     this.num = num1;
@@ -42,9 +60,9 @@ class Percolation {
     * @param      n1    The n 1
     * @param      n2    The n 2
     *
-    * @return     { description_of_the_return_value }
+    * @return     { description_of_the_return_value }.
     */
-    private int indexOf(int n1, int n2) {
+    private int indexOf(final int n1, final int n2) {
         return num * (n1 - 1) + n2 - 1;
     }
     /**
@@ -53,18 +71,18 @@ class Percolation {
      * @param      row   The row
      * @param      col   The col
      */
-    private void openSites(int row, int col) {
+    private void openSites(final int row, final int col) {
         if (arr[col] && !weigh.connected(row, col)) {
             weigh.union(row, col);
         }
     }
    /**
-    * { function_description }.
+    * { open site (row, col) if it is not open already }.
     *
     * @param      row   The row
     * @param      col   The col
     */
-    public void open(int row, int col) {
+    public void open(final int row, final int col) {
         // open site (row, col) if it is not open already
         int ind = indexOf(row, col);
         arr[ind] = true;
@@ -108,7 +126,7 @@ class Percolation {
     *
     * @return     True if open, False otherwise.
     */
-    public boolean isOpen(int row, int col) {
+    public boolean isOpen(final int row, final int col) {
         // is site (row, col) open?
         return arr[indexOf(row, col)];
     }
@@ -123,11 +141,6 @@ class Percolation {
    //  public boolean isFull(int row, int col) {
    //      // is site (row, col) full?
    //      return false;
-
-
-
-
-
    //  }
     /**
     * { function_description }.
@@ -138,8 +151,6 @@ class Percolation {
         // number of open sites
 
         return count;
-
-
     }
    /**
     * { function_description }.
