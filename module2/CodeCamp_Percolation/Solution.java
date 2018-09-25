@@ -157,7 +157,7 @@ class Percolation {
     *
     * @return     { description_of_the_return_value }
     */
-    public boolean percolates() {  
+    public boolean percolates() {
     // does the system percolate?
         return weigh.connected(begin, end);
     }
