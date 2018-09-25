@@ -172,7 +172,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
+        int n = Integer.parseInt(s.nextLine());
         Percolation perobj = new Percolation(n);
         while (s.hasNext()) {
             String tokens[] = s.nextLine().split(" ");
