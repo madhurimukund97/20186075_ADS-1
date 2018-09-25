@@ -83,7 +83,7 @@ class Percolation {
         }
 
         if (col == 1) {
-            if (col != num - 1) {
+            if (col != num) {
                 openSites(ind, ind + 1);
             }
             return;
