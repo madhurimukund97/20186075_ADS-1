@@ -41,7 +41,7 @@ class SortedArray {
                 list[k++] = arra2[j++];
             }
         }
-        while (i < arra1.length) {
+        while (i <= arra1.length) {
             list[k++] = arra1[i++];
         }
         while (j < arra2.length) {
