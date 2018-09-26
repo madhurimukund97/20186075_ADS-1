@@ -44,7 +44,7 @@ class SortedArray {
         while (i < arra1.length) {
             list[k++] = arra1[i++];
         }
-        while (j < arra2.length) {
+        while (j <= arra2.length) {
             list[k++] = arra2[j++];
         }
         String output = "";
@@ -83,10 +83,10 @@ public final class Solution {
         String[] n1 = s.nextLine().split(",");
         int[] arr1 = new int[m];
         int[] arr2 = new int[n];
-        for (int i = 0; i < m + 1; i++) {
+        for (int i = 0; i < m; i++) {
             arr1[i] = Integer.parseInt(m1[i]);
         }
-        for (int j = 0; j < n + 1; j++) {
+        for (int j = 0; j < n; j++) {
             arr2[j] = Integer.parseInt(n1[j]);
         }
         SortedArray sa = new SortedArray(arr1, arr2);
