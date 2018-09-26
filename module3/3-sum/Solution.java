@@ -8,18 +8,18 @@ class ThreeSum {
     /**
      * { Integer array }.
      */
-    int[] array;
+    private int[] array;
     /**
      * { Integer size }.
      */
-    int size;
+    private int size;
     /**
      * Constructs the object.
      *
      * @param      arr   The arr
      * @param      num   The number
      */
-    ThreeSum(int[] arr, int num) {
+    ThreeSum(final int[] arr, final int num) {
         this.array = arr;
         this.size = num;
     }
@@ -30,11 +30,11 @@ class ThreeSum {
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(int[] ar) {
+    public int count(final int[] ar) {
         Arrays.sort(ar);
         int count = 0;
         for (int i = 0; i < ar.length; i++) {
-            for (int j = i+1; j < ar.length; j++) {
+            for (int j = i + 1; j < ar.length; j++) {
                 int res = binarySearch(ar, -(ar[i] + ar[j]));
                 if (res > j && res > 0) {
                     count++;
@@ -51,7 +51,7 @@ class ThreeSum {
      *
      * @return     { description_of_the_return_value }
      */
-    public int binarySearch(int[] sarray, int ele) {
+    public int binarySearch(final int[] sarray, final int ele) {
         int first = 0;
         int last = sarray.length - 1;
         while (first <= last) {
@@ -68,7 +68,7 @@ class ThreeSum {
     }
 }
 /**
- * 
+ *
  * { Solution class }.
  */
 public final class Solution {
@@ -79,6 +79,9 @@ public final class Solution {
         // constructor not used.
     }
     public static void main(final String[] args) {
+        /**
+         * { main }.
+         */
         Scanner s = new Scanner(System.in);
         int n = Integer.parseInt(s.nextLine());
         int[] a = new int[n];
