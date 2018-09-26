@@ -35,7 +35,7 @@ class SortedArray {
         int k = 0;
         int[] list = new int[arra1.length + arra2.length];
         while (i < arra1.length && j < arra2.length) {
-            if (arra1[i] < arra2[j]) {
+            if (arra1[i] <= arra2[j]) {
                 list[k++] = arra1[i++];
             } else {
                 list[k++] = arra2[j++];
@@ -44,7 +44,7 @@ class SortedArray {
         while (i < arra1.length) {
             list[k++] = arra1[i++];
         }
-        while (j <= arra2.length) {
+        while (j < arra2.length) {
             list[k++] = arra2[j++];
         }
         String output = "";
