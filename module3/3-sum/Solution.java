@@ -5,13 +5,31 @@ import java.util.Arrays;
  * Class for three sum.
  */
 class ThreeSum {
+    /**
+     * { Integer array }.
+     */
     int[] array;
+    /**
+     * { Integer size }.
+     */
     int size;
-
+    /**
+     * Constructs the object.
+     *
+     * @param      arr   The arr
+     * @param      num   The number
+     */
     ThreeSum(int[] arr, int num) {
         this.array = arr;
         this.size = num;
     }
+    /**
+     * { count  }.
+     *
+     * @param      ar    The archive
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int count(int[] ar) {
         Arrays.sort(ar);
         int count = 0;
@@ -25,7 +43,14 @@ class ThreeSum {
         }
         return count;
     }
-
+    /**
+     * { binary search method }.
+     *
+     * @param      sarray  The sarray
+     * @param      ele     The ele
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int binarySearch(int[] sarray, int ele) {
         int first = 0;
         int last = sarray.length - 1;
@@ -56,7 +81,7 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = Integer.parseInt(s.nextLine());
-        int a[] = new int[n];
+        int[] a = new int[n];
         ThreeSum ts = new ThreeSum(a, n);
         for (int i = 0; i < n; i++) {
             a[i] = s.nextInt();
