@@ -78,6 +78,11 @@ public final class Solution {
     private Solution() {
         // constructor not used.
     }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         /**
          * { main }.
