@@ -41,39 +41,36 @@ class Stack {
         return size == str.length;
     }
 
-    
-    public String balanced(char[] expr) {
-		// if (expr.isempty())
- 	// 		return "YES";
- 
- 		// Stack<Character> stack = new Stack<Character>();
- 	for (char current : expr) {
- 		// char current = expr[i];
- 		// char current = 
- 		if (current == '{' || current == '(' || current == '[') {
- 			push(current);
- 		} else {
- 			if (!isempty()) {
- 				char last = peek();
- 				if ((last == '{' && current == '}') || (last == '[' && current == ']')
-                         || (last == '(' && current == ')')) {
+    public String balanced(final char[] brac) {
+        // Stack s = new Stack();
+
+
+        for (char i : brac) {
+            if (i == '{' || i == '[' || i == '(') {
+                push(i);
+            } else {
+                if (!isempty()) {
+                    char last = peek();
+                    if ((last == '{' && i == '}')
+                        || (last == '[' && i == ']')
+                        || (last == '(' && i == ')')) {
                         pop();
+                    } else {
+                        return"NO";
+                    }
                 } else {
- 				return "NO";
- 				}
- 			} else {
- 				return "NO";
- 			}
- 		}
- 	}
- 	// return isempty()?"YES":"NO";
- 	if (isempty()) {
- 		return "YES";
- 	}
- 	else {
- 		return "NO";
- 	}
- 	}
+                    return "NO";
+                }
+            }
+        }
+        if (isempty()) {
+            return "YES";
+        } else {
+            return "NO";
+        }
+
+    }
+
 }
 
 /**
