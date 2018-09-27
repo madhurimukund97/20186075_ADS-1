@@ -50,10 +50,10 @@ class Stack {
                 push(i);
             } else {
                 if (!isempty()) {
-                    char last = peek();
-                    if ((last == '{' && i == '}')
-                        || (last == '[' && i == ']')
-                        || (last == '(' && i == ')')) {
+                    char top = peek();
+                    if ((top == '{' && i == '}')
+                        || (top == '[' && i == ']')
+                        || (top == '(' && i == ')')) {
                         pop();
                     } else {
                         return"NO";
