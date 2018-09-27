@@ -8,7 +8,7 @@ class Stack {
     /**
      * { Character array }.
      */
-    private char [] str;
+    private char[] str;
     /**
      * { Integer size }.
      */
@@ -17,7 +17,8 @@ class Stack {
      * Constructs the object.
      */
     Stack() {
-        str = new char[10];
+        final int ten = 10;
+        str = new char[ten];
         size = 0;
     }
     /**
