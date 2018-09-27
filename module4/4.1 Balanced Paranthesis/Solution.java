@@ -47,7 +47,7 @@ class Stack {
  	// 		return "YES";
  
  		// Stack<Character> stack = new Stack<Character>();
- 	for (int i = 0; i < expr.length; i++) {
+ 	for (char i : expr) {
  		char current = expr[i];
  		if (current == '{' || current == '(' || current == '[') {
  			push(current);
