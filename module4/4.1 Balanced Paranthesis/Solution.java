@@ -15,7 +15,11 @@ class Stack {
         size = 0;
 
     }
-    
+    /**
+     * { push }.
+     *
+     * @param      ch    { parameter_description }
+     */
     public void push(final char ch) {
         if (isfull()) {
             str = Arrays.copyOf(str, str.length * (2));
@@ -23,24 +27,46 @@ class Stack {
         str[size++] = ch;
 
     }
-    
+    /**
+     * { pop }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public char pop() {
         return str[--size];
 
     }
-    
+    /**
+     * { isempty }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean isempty() {
         return size == 0;
     }
-    
+    /**
+     * { peek }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public char peek() {
         return str[size - 1];
     }
-    
+    /**
+     * { boolean isfull }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean isfull() {
         return size == str.length;
     }
-
+    /**
+     * { balanced method }.
+     *
+     * @param      brac  The brac
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String balanced(final char[] brac) {
         Stack s = new Stack();
 
@@ -56,7 +82,7 @@ class Stack {
                         || (top == '(' && i == ')')) {
                         s.pop();
                     } else {
-                        return"NO";
+                        return "NO";
                     }
                 } else {
                     return "NO";
@@ -97,7 +123,6 @@ public final class Solution {
         while (scan.hasNext()) {
             char[] bracket = scan.nextLine().toCharArray();
             System.out.println(sc.balanced(bracket));
-
         }
-    }   
+    } 
 }
