@@ -47,15 +47,16 @@ class Stack {
  	// 		return "YES";
  
  		// Stack<Character> stack = new Stack<Character>();
- 	for (char i : expr) {
- 		char current = expr[i];
+ 	for (char current : expr) {
+ 		// char current = expr[i];
+ 		// char current = 
  		if (current == '{' || current == '(' || current == '[') {
  			push(current);
  		} else {
  			if (!isempty()) {
  				char last = peek();
- 				if ((last == '{' && i == '}') || (last == '[' && i == ']')
-                         || (last == '(' && i == ')')) {
+ 				if ((last == '{' && current == '}') || (last == '[' && current == ']')
+                         || (last == '(' && current == ')')) {
                         pop();
                 } else {
  				return "NO";
