@@ -41,35 +41,7 @@ class Stack {
         return size == str.length;
     }
 
-    // public String balanced(final char[] brac) {
-    //     // Stack s = new Stack();
-
-
-    //     for (char i : brac) {
-    //         if (i == '{' || i == '[' || i == '(') {
-    //             push(i);
-    //         } else {
-    //             if (!isempty()) {
-    //                 char top = peek();
-    //                 if ((top == '{' && i == '}')
-    //                     || (top == '[' && i == ']')
-    //                     || (top == '(' && i == ')')) {
-    //                     pop();
-    //                 } else {
-    //                     return"NO";
-    //                 }
-    //             } else {
-    //                 return "NO";
-    //             }
-    //         }
-    //     }
-    //     if (isempty()) {
-    //         return "YES";
-    //     } else {
-    //         return "NO";
-    //     }
-
-    // }
+    
     public String balanced(char[] expr) {
 		// if (expr.isempty())
  	// 		return "YES";
@@ -79,22 +51,22 @@ class Stack {
  		char current = expr[i];
  		if (current == '{' || current == '(' || current == '[') {
  			push(current);
- 		}
- 		if (current == '}' || current == ')' || current == ']') {
- 			if (isempty()) {
+ 		} else {
+ 			if (!isempty()) {
+ 				char last = peek();
+ 				if ((last == '{' && i == '}') || (last == '[' && i == ']')
+                         || (last == '(' && i == ')')) {
+                        pop();
+                } else {
+ 				return "NO";
+ 				}
+ 			} else {
  				return "NO";
  			}
- 			char last = peek();
- 			if (current == '}' && last == '{' || current == ')' && last == '(' || current == ']' && last == '[')
- 				pop();
-			else 
- 				return "NO";
  		}
  	}
  	return isempty()?"YES":"NO";
- 	}	
-
-
+ 	}
 }
 
 /**
