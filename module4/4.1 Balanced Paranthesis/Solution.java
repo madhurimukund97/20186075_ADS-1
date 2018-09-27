@@ -71,8 +71,8 @@ class Stack {
 
     // }
     public String balanced(char[] expr) {
-		if (isempty())
- 			return "YES";
+		// if (expr.isempty())
+ 	// 		return "YES";
  
  		// Stack<Character> stack = new Stack<Character>();
  	for (int i = 0; i < expr.length; i++) {
