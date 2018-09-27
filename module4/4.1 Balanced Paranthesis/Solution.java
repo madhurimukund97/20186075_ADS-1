@@ -5,15 +5,20 @@ import java.util.Arrays;
  * List of .
  */
 class Stack {
-    char [] str;
-    int size;
+    /**
+     * { Character array }.
+     */
+    private char [] str;
+    /**
+     * { Integer size }.
+     */
+    private int size;
     /**
      * Constructs the object.
      */
-    public Stack() {
+    Stack() {
         str = new char[10];
         size = 0;
-
     }
     /**
      * { push }.
@@ -124,5 +129,5 @@ public final class Solution {
             char[] bracket = scan.nextLine().toCharArray();
             System.out.println(sc.balanced(bracket));
         }
-    } 
+    }
 }
