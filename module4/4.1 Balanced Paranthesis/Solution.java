@@ -42,19 +42,19 @@ class Stack {
     }
 
     public String balanced(final char[] brac) {
-        // Stack s = new Stack();
+        Stack s = new Stack();
 
 
         for (char i : brac) {
             if (i == '{' || i == '[' || i == '(') {
-                push(i);
+                s.push(i);
             } else {
-                if (!isempty()) {
-                    char top = peek();
+                if (!s.isempty()) {
+                    char top = s.peek();
                     if ((top == '{' && i == '}')
                         || (top == '[' && i == ']')
                         || (top == '(' && i == ')')) {
-                        pop();
+                        s.pop();
                     } else {
                         return"NO";
                     }
@@ -63,7 +63,7 @@ class Stack {
                 }
             }
         }
-        if (isempty()) {
+        if (s.isempty()) {
             return "YES";
         } else {
             return "NO";
