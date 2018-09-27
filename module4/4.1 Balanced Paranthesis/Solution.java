@@ -63,12 +63,12 @@ class Stack {
                 }
             }
         }
-        // if (s.isempty()) {
-        //     return "YES";
-        // } else {
-        //     return "NO";
-        // }
-        return s.isempty()?"YES":"NO";
+        if (s.isempty()) {
+            return "YES";
+        } else {
+            return "NO";
+        }
+        // return s.isempty()? "YES" : "NO";
 
     }
 
@@ -77,20 +77,20 @@ class Stack {
 /**
  * Class for solution.
  */
-public class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		// constructor not used.
-	}
-	/**
-	 * { main function }.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // constructor not used.
+    }
+    /**
+     * { main function }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
         Stack sc = new Stack();
         int input = scan.nextInt();
         scan.nextLine();
@@ -99,7 +99,5 @@ public class Solution {
             System.out.println(sc.balanced(bracket));
 
         }
-	}
-
-	
+    }   
 }
