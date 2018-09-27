@@ -63,11 +63,12 @@ class Stack {
                 }
             }
         }
-        if (s.isempty()) {
-            return "YES";
-        } else {
-            return "NO";
-        }
+        // if (s.isempty()) {
+        //     return "YES";
+        // } else {
+        //     return "NO";
+        // }
+        return s.isempty()?"YES":"NO";
 
     }
 
