@@ -66,7 +66,13 @@ class Stack {
  			}
  		}
  	}
- 	return isempty()?"YES":"NO";
+ 	// return isempty()?"YES":"NO";
+ 	if (isempty()) {
+ 		return "YES";
+ 	}
+ 	else {
+ 		return "NO";
+ 	}
  	}
 }
 
