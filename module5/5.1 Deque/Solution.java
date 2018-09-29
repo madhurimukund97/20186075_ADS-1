@@ -4,15 +4,15 @@ import java.util.Scanner;
  */
 class Deque {
     /**
-     * {Variable first of node type}.
+     * Variable first of node type.
      */
     private Node frst;
     /**
-     * {Variable last of node type}.
+     * Variable last of node type.
      */
     private Node lst;
     /**
-     * {Variable size of int type}.
+     * Variable size of int type.
      */
     private int size;
     /**
@@ -55,7 +55,7 @@ class Deque {
     /**
      * Method to push from front.
      *
-     * @param      int1  The int1
+     * @param      num  
      */
     public void pushFront(final int num) {
         if (frst == null) {
