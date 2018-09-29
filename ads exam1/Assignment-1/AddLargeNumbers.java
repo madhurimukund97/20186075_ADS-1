@@ -75,7 +75,7 @@ class AddLargeNumbers {
         int carry = 0;
         for (int i = 0; i < len; i++) {
             int d1 = 0, d2 = 0;        
-            // d1 = list1.removeLast(Character.getNumericValue(s1.charAt(i)));
+            // d1 = list1.addLast(Character.getNumericValue(s1.charAt(i)));
             // d2 = list2.removeLast(Character.getNumericValue(s2.charAt(i)));
             
             int x = d1 + d2 + carry;
