@@ -62,8 +62,8 @@ class AddLargeNumbers {
         final LinkedList list1, final LinkedList list2) {
         Scanner scan = new Scanner(System.in);
         LinkedList ans = new LinkedList();
-        String s1 = scan.next();
-        String s2 = scan.next();
+        String s1 = scan.nextLine();
+        String s2 = scan.nextLine();
         int l1 = s1.length(), l2 = s2.length();
         for (int i = l1 - 1; i >= 0; i--) {
             list1.add(s1.charAt(i) - '0');
