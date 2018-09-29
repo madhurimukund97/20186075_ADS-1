@@ -27,8 +27,8 @@ class AddLargeNumbers {
         //     li.insert(number);
         // }
         // return li;
-        LinkedList<Integer> li = new LinkedList<>();
-        for (int i = 1; i < number.length(); i++) {
+        LinkedList li = new LinkedList();
+        for (int i = 0; i < number.length(); i++) {
             li.addLast(Character.getNumericValue(number.charAt(i)));
         }
         return li;
