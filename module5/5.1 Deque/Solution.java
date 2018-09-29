@@ -53,9 +53,9 @@ class Deque {
         return size;
     }
     /**
-     * Method to push from front.
+     * Pushes a front.
      *
-     * @param      num
+     * @param      num   The number
      */
     public void pushFront(final int num) {
         if (frst == null) {
