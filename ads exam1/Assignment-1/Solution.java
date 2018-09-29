@@ -5,6 +5,12 @@ import java.util.Iterator;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
+    /**
+     * constructor.
+    */
+    AddLargeNumbers() {
+
+    }
     // Stack s = new Stack();
     /**
      * { function_description }.
@@ -67,8 +73,7 @@ class AddLargeNumbers {
     //     int len = l1 > l2 ? l1 : l2;
     //     int carry = 0;
     //     for (int i = 0; i < len; i++) {
-    //         int d1 = 0, d2 = 0;
-            
+    //         int d1 = 0, d2 = 0;        
     //         // d1 = list1.get(i);
     //         // d2 = list2.get(i);
     //         int x = d1 + d2 + carry;
