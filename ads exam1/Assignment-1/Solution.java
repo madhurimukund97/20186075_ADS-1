@@ -5,7 +5,7 @@ import java.util.Iterator;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-    Stack s = new Stack();
+    // Stack s = new Stack();
     /**
      * { function_description }.
      *
@@ -16,7 +16,7 @@ class AddLargeNumbers {
     public static LinkedList numberToDigits(final String number) {
         // LinkedList li = new LinkedList();
         // for (int i = 0; i < number.length(); i++) {
-        //     
+        //
         //     li.insert(number);
         // }
         // return li;
@@ -38,7 +38,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(final LinkedList list) {
         String append = "";
         Iterator it = list.listIterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             append += it.next();
         }
         return append;
@@ -51,12 +51,13 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(
+        final LinkedList list1, final LinkedList list2) {
         // Scanner scan = new Scanner(System.in);
     //     LinkedList ans = new LinkedList();
     //     String s1 = scan.next();
     //     String s2 = scan.next();
-    //     int l1 = s1.length(), l2 = s2.length();        
+    //     int l1 = s1.length(), l2 = s2.length();
     //     for (int i = l1 - 1; i >= 0; i--) {
     //         list1.add(s1.charAt(i) - '0');
     //     }
@@ -66,10 +67,10 @@ class AddLargeNumbers {
     //     int len = l1 > l2 ? l1 : l2;
     //     int carry = 0;
     //     for (int i = 0; i < len; i++) {
-    //         int d1 = 0, d2 = 0;            
+    //         int d1 = 0, d2 = 0;
             
-    //         // d1 = list1.get(i);          
-    //         // d2 = list2.get(i);                       
+    //         // d1 = list1.get(i);
+    //         // d2 = list2.get(i);
     //         int x = d1 + d2 + carry;
     //         ans.add(x % 10);
     //         carry = x / 10;
@@ -79,7 +80,7 @@ class AddLargeNumbers {
     //         carry /= 10;
     //     }
     //     for (int i = ans.size() - 1; i >= 0; i--) {
-    //         System.out.print(ans.get(i));       
+    //         System.out.print(ans.get(i));
     //     }
         Scanner scan = new Scanner(System.in);
         LinkedList<Integer> ans = new LinkedList<Integer>();
