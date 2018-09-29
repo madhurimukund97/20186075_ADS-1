@@ -15,7 +15,7 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);    
         int num = Integer.parseInt(sc.nextLine());
         while (sc.hasNext()) {
             String[] tokens = sc.nextLine().split(" ");
