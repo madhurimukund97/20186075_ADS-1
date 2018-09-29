@@ -28,7 +28,7 @@ class AddLargeNumbers {
         // }
         // return li;
         LinkedList<Integer> li = new LinkedList<>();
-        for (int i = 0; i < number.length(); i++) {
+        for (int i = 1; i < number.length(); i++) {
             li.addLast(Character.getNumericValue(number.charAt(i)));
         }
         return li;
@@ -61,7 +61,7 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(
         final LinkedList list1, final LinkedList list2) {
         Scanner scan = new Scanner(System.in);
-        LinkedList result = new LinkedList();
+        LinkedList<Integer> result = new LinkedList<>();
         String s1 = scan.nextLine();
         String s2 = scan.nextLine();
         int l1 = s1.length(), l2 = s2.length();
