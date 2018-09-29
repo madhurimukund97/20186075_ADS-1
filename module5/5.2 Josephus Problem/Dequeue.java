@@ -63,7 +63,7 @@ class Dequeue {
      * @param      name  The name
      */
     public void pushBack(final int name) {
-        if (last != null) {
+        if (last == null) {
             last = new Node();
             last.name = name;
             last.next = null;
