@@ -154,7 +154,7 @@ public final class Solution {
 					default:
 					System.out.print("");
 					sq = new Steque();
-					// System.out.println();
+					System.out.println();
 					break;
 				} 
 			}
