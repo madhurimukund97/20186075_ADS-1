@@ -85,7 +85,7 @@ class Steque {
 
         }
         while (temp.next != null) {
-            result += temp.gData() + ",";
+            result += temp.gData() + " ";
             temp = temp.gNext();
         }
         result = result + temp.data;
@@ -155,7 +155,8 @@ public final class Solution {
 					System.out.println();
 					sq = new Steque();
 					break;
+				} 
 			}
-		}
+		// }
 	}
 }
