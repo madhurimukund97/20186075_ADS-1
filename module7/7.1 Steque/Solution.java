@@ -134,31 +134,28 @@ public final class Solution {
 	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int numOfLines = Integer.parseInt(s.nextLine());
-		// for (int i = 0; i < numOfLines; i++) {
-			Steque sq = new Steque();
-			while (s.hasNext()) {
-				String tokens[] = s.nextLine().split(" ");
-				switch(tokens[0]) {
-					case "push":
-					sq.push(Integer.parseInt(tokens[1]));
-					sq.display();
-					break;
-					case "pop":
-					sq.pop();
-					sq.display();
-					break;
-					case "enqueue":
-					sq.enqueue(Integer.parseInt(tokens[1]));
-					sq.display();
-					break;
-					default:
-					System.out.print("");
-					sq = new Steque();
-					System.out.println();
-					break;
-				} 
-			}
-			// System.out.println();
-		// }
+		Steque sq = new Steque();
+		while (s.hasNext()) {
+			String tokens[] = s.nextLine().split(" ");
+			switch(tokens[0]) {
+				case "push":
+				sq.push(Integer.parseInt(tokens[1]));
+				sq.display();
+				break;
+				case "pop":
+				sq.pop();
+				sq.display();
+				break;
+				case "enqueue":
+				sq.enqueue(Integer.parseInt(tokens[1]));
+				sq.display();
+				break;
+				default:
+				System.out.print("");
+				sq = new Steque();
+				System.out.println();
+				break;
+			} 
+		}	
 	}
 }
