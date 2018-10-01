@@ -56,17 +56,17 @@ class Steque {
     /**
      * Makes a listempty.
      */
-    public void Listempty() {
+    public void listempty() {
         first = null;
         last = null;
     }
-	/**
-	 * add the elements at end.
-	 *
-	 * @param      data  The data
-	 */
-	public void push(int data) {
-		Node newnode = new Node(data);
+    /**
+     * add the elements at end.
+     *
+     * @param      data  The data
+     */
+    public void push(final int data) {
+        Node newnode = new Node(data);
         if (first == null) {
             first = newnode;
             last = newnode;
@@ -74,12 +74,12 @@ class Steque {
             newnode.sNext(first);
             first = newnode;
         }
-	}
-	/**
-	 * display the output after push, enqueue and pop operations.
-	 */
-	public void display() {
-		Node temp = first;
+    }
+    /**
+     * display the output after push, enqueue and pop operations.
+     */
+    public void display() {
+        Node temp = first;
         String result = "";
         if (first == null) {
             System.out.println("Steque is empty.");
@@ -92,14 +92,14 @@ class Steque {
         }
         result = result + temp.data;
         System.out.println(result);
-	}
-	/**
-	 * adds the elements at the front.
-	 *
-	 * @param      data  The data
-	 */
-	public void enqueue(int data) {
-		Node newnode = new Node(data);
+    }
+    /**
+     * adds the elements at the front.
+     *
+     * @param      data  The data
+     */
+    public void enqueue(final int data) {
+        Node newnode = new Node(data);
         if (first == null) {
             first = newnode;
             last = newnode;
@@ -107,59 +107,57 @@ class Steque {
             last.sNext(newnode);
             last = newnode;
         }
-	}
-	/**
-	 * pop function (removes the element from last).
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public void pop() {
-		if (first == null) {
+    }
+    /**
+     * deletes the eleemnt from end.
+     */
+    public void pop() {
+        if (first == null) {
             return;
         }
         first = first.next;
-	}
+    }
 }
 /**
  * Solution class.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		// Constructor not used.
-	}
-	/**
-	 * Main function.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner s = new Scanner(System.in);
-		int numOfLines = Integer.parseInt(s.nextLine());
-		Steque sq = new Steque();
-		while (s.hasNext()) {
-			String tokens[] = s.nextLine().split(" ");
-			switch(tokens[0]) {
-				case "push":
-				sq.push(Integer.parseInt(tokens[1]));
-				sq.display();
-				break;
-				case "pop":
-				sq.pop();
-				sq.display();
-				break;
-				case "enqueue":
-				sq.enqueue(Integer.parseInt(tokens[1]));
-				sq.display();
-				break;
-				default:
-				System.out.print("");
-				sq = new Steque();
-				System.out.println();
-				break;
-			} 
-		}	
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // Constructor not used.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner s = new Scanner(System.in);
+        int numOfLines = Integer.parseInt(s.nextLine());
+        Steque sq = new Steque();
+        while (s.hasNext()) {
+            String[] tokens = s.nextLine().split(" ");
+            switch (tokens[0]) {
+                case "push":
+                sq.push(Integer.parseInt(tokens[1]));
+                sq.display();
+                break;
+                case "pop":
+                sq.pop();
+                sq.display();
+                break;
+                case "enqueue":
+                sq.enqueue(Integer.parseInt(tokens[1]));
+                sq.display();
+                break;
+                default:
+                System.out.print("");
+                sq = new Steque();
+                System.out.println();
+                break;
+            }
+        }
+    }
 }
