@@ -147,7 +147,7 @@ public final class Solution {
 					sq.pop();
 					sq.display();
 					break;
-					case "enque":
+					case "enqueue":
 					sq.enqueue(Integer.parseInt(tokens[1]));
 					sq.display();
 					break;
