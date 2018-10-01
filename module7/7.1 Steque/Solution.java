@@ -83,7 +83,6 @@ class Steque {
     /**
      * display the output after push, enqueue and pop operations.
      * Time complexity for display() is n.
-     *  
      */
     public void display() {
         Node temp = first;
@@ -120,7 +119,6 @@ class Steque {
     /**
      * deletes the eleemnt from begining.
      * Time complexity for pop() is 1.
-     * 
      */
     public void pop() {
         if (first == null) {
