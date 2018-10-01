@@ -134,7 +134,7 @@ public final class Solution {
 	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int numOfLines = s.nextInt();
-		for (int i = 0; i < numOfLines; i++) {
+		//for (int i = 0; i < numOfLines; i++) {
 			Steque sq = new Steque();
 			while (s.hasNext()) {
 				String tokens[] = s.nextLine().split(" ");
@@ -151,7 +151,10 @@ public final class Solution {
 					sq.enqueue(Integer.parseInt(tokens[1]));
 					sq.display();
 					break;
-				} 
+					default:
+					System.out.println();
+					sq = new Steque();
+					break;
 			}
 		}
 	}
