@@ -1,11 +1,15 @@
 import java.util.Scanner;
+/**
+ * Class for steque.
+ * The time complexity is 1.
+ */
 class Steque {
     /**
-     * Node first.
+     * Node type of first.
      */
     private Node first = null;
     /**
-     * Node last.
+     * Node type of last.
      */
     private Node last = null;
     /**
@@ -61,7 +65,8 @@ class Steque {
         last = null;
     }
     /**
-     * add the elements at end.
+     * add the elements at front.
+     * The time complexity for push() is 1.
      *
      * @param      data  The data
      */
@@ -77,6 +82,8 @@ class Steque {
     }
     /**
      * display the output after push, enqueue and pop operations.
+     * Time complexity for display() is n.
+     *  
      */
     public void display() {
         Node temp = first;
@@ -94,7 +101,9 @@ class Steque {
         System.out.println(result);
     }
     /**
-     * adds the elements at the front.
+     * adds the elements at the end.
+     * add the elements at front.
+     * The time complexity for enqueue() is 1.
      *
      * @param      data  The data
      */
@@ -109,7 +118,9 @@ class Steque {
         }
     }
     /**
-     * deletes the eleemnt from end.
+     * deletes the eleemnt from begining.
+     * Time complexity for pop() is 1.
+     * 
      */
     public void pop() {
         if (first == null) {
@@ -129,7 +140,7 @@ public final class Solution {
         // Constructor not used.
     }
     /**
-     * Main function.
+     * Client program.
      *
      * @param      args  The arguments
      */
