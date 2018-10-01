@@ -78,14 +78,14 @@ class Steque {
 	 */
 	public void display() {
 		Node temp = first;
-        String result = "";
+        String result = " ";
         if (first == null) {
             System.out.println("Steque is empty.");
             return;
 
         }
         while (temp.next != null) {
-            result += temp.gData() + " ";
+            result += temp.gData() + ", ";
             temp = temp.gNext();
         }
         result = result + temp.data;
