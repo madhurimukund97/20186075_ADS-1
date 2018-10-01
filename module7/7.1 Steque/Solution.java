@@ -23,7 +23,7 @@ class Steque {
         /**
          * Constructs the object.
          *
-         * @param      d     { set the data to a node }.
+         * @param      num     { set the data to a node }.
          */
         private Node(final int num) {
             data = num;
@@ -47,7 +47,7 @@ class Steque {
         /**
          * Sets the next.
          *
-         * @param      address  The address
+         * @param      adrs  The address
          */
         public void sNext(final Node adrs) {
             this.next = adrs;
@@ -61,7 +61,9 @@ class Steque {
         last = null;
     }
 	/**
-	 * push function(adds the elements using stack).
+	 * add the elements at end.
+	 *
+	 * @param      data  The data
 	 */
 	public void push(int data) {
 		Node newnode = new Node(data);
@@ -92,7 +94,9 @@ class Steque {
         System.out.println(result);
 	}
 	/**
-	 * adds the elements at last.
+	 * adds the elements at the front.
+	 *
+	 * @param      data  The data
 	 */
 	public void enqueue(int data) {
 		Node newnode = new Node(data);
