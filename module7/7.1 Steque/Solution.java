@@ -152,11 +152,12 @@ public final class Solution {
 					sq.display();
 					break;
 					default:
-					System.out.println();
+					// System.out.println();
 					sq = new Steque();
 					break;
 				} 
 			}
+			System.out.println();
 		}
 	}
 }
