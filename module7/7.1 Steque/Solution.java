@@ -78,7 +78,7 @@ class Steque {
 	 */
 	public void display() {
 		Node temp = first;
-        String result = " ";
+        String result = "";
         if (first == null) {
             System.out.println("Steque is empty.");
             return;
