@@ -133,7 +133,7 @@ public final class Solution {
 	 */
 	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
-		int numOfLines = s.nextInt();
+		int numOfLines = Integer.parseInt(s.nextLine());
 		for (int i = 0; i < numOfLines; i++) {
 			Steque sq = new Steque();
 			while (s.hasNext()) {
@@ -153,7 +153,7 @@ public final class Solution {
 					break;
 					default:
 					sq = new Steque();
-					System.out.println();
+					// System.out.println();
 					break;
 				} 
 			}
