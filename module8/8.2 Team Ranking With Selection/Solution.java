@@ -80,7 +80,7 @@ class SelectionSort {
 					min = j; 
 				}
 			}  
-			swapping(tArray, i, j);
+			swapping(tArray, j, j-1);
 		}
 	}
 	/**
