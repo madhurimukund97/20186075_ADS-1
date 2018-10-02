@@ -58,7 +58,7 @@ class InsertionSort {
 	public String toString() {
 		int res = 0;
         String string = "";
-        for (res = 0; res < size; res++) {
+        for (res = 0; res <= size; res++) {
             string += tArray[res].getname() + ",";
         }
         string += tArray[res].getname();
