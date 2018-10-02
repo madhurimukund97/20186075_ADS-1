@@ -162,7 +162,7 @@ class SelectionSort {
         for (int i = 0; i < size; i++) {
             int min = i;       
             for (int j = i + 1; j < size; j++) {
-                if (tArray[j].compareTo(tArray[min]) == -1) {
+                if (tArray[j].compareTo(tArray[min]) == 1) {
                     min = j;
                 }
             }
