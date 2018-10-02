@@ -61,7 +61,7 @@ class InsertionSort {
         for (res = 0; res < size - 1; res++) {
             string += tArray[res].getname() + ",";
         }
-        string += tArray[res].getname();
+        // string += tArray[res].getname();
         return string;
 	}
 	public void add(Tournament g) {
@@ -71,7 +71,7 @@ class InsertionSort {
 		tArray[size++] = g;
 	}
 	public void insertionsort() {
-		for (int i = 0; i <= size; i++) {
+		for (int i = 0; i < size; i++) {
 			for (int j = i; j > 0; j--) {
 				if (tArray[j].compareTo(tArray[j-1]) == 1) {
 					swapping(tArray, j , j-1);
