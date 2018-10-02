@@ -58,7 +58,7 @@ class InsertionSort {
 	public String toString() {
 		int res = 0;
         String string = "";
-        for (res = 0; res <= size; res++) {
+        for (res = 0; res <= size - 1; res++) {
             string += tArray[res].getname() + ",";
         }
         string += tArray[res].getname();
@@ -72,7 +72,7 @@ class InsertionSort {
 	}
 	public void insertionsort() {
 		for (int i = 0; i < size; i++) {
-			for (int j = i; j > 0; j--) {
+			for (int j = i; j >= 0; j--) {
 				if (tArray[j].compareTo(tArray[j-1]) == 1) {
 					swapping(tArray, j , j-1);
 				} else {
