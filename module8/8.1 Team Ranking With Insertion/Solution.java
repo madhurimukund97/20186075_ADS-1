@@ -4,13 +4,13 @@ import java.util.Arrays;
  * Class for tournament.
  */
 class Tournament implements Comparable {
-	/**
-	 * String type of tName.
-	 */
-	private String tName;
-	/**
-	 * winner of type int.
-	 */
+    /**
+     * String type of tName.
+     */
+    private String tName;
+    /**
+     * winner of type int.
+     */
     private int winner;
     /**
      * losser of type int.
@@ -25,7 +25,7 @@ class Tournament implements Comparable {
      * Time complexity is 1.
      */
     Tournament() {
-    	//constructor not used.
+        //constructor not used.
     }
     /**
      * Constructs the object.
@@ -67,25 +67,25 @@ class Tournament implements Comparable {
      * @return     returns 1 if true or else -1.
      * Time complexity is 1.
      */
-    public int compareTo(Object ob) {
-    	//System.out.println("i am compareto");
-    	Tournament t = (Tournament) ob;
-    	if (this.getWinner() > t.getWinner()) {
-    		return 1;
-    	} else if (this.getWinner() < t.getWinner()) {
-    		return -1;
-    	}
-	    if (this.getLosser() < t.getLosser()) {
-	    	return 1;
-	    } else if (this.getLosser() > t.getLosser()) {
-	    	return -1;
-	    }
-		if (this.getDraw() > t.getDraw()) {
-		   	return 1;
-		} else if (this.getDraw() < t.getDraw()) {
-		   	return -1;
-		}
-	    return 0;
+    public int compareTo(final Object ob) {
+        //System.out.println("i am compareto");
+        Tournament t = (Tournament) ob;
+        if (this.getWinner() > t.getWinner()) {
+            return 1;
+        } else if (this.getWinner() < t.getWinner()) {
+            return -1;
+        }
+        if (this.getLosser() < t.getLosser()) {
+            return 1;
+        } else if (this.getLosser() > t.getLosser()) {
+            return -1;
+        }
+        if (this.getDraw() > t.getDraw()) {
+            return 1;
+        } else if (this.getDraw() < t.getDraw()) {
+            return -1;
+        }
+        return 0;
     }
     /**
      * used to get name.
@@ -110,120 +110,123 @@ class Tournament implements Comparable {
  * Class for insertion sort.
  */
 class InsertionSort {
-	/**
-	 * tArray of type Tournament.
-	 */
-	private Tournament[] tArray;
-	/**
-	 * size of type int.
-	 */
-	private int size;
-	/**
-	 * Constructs the object.
-	 * Time complexity is 1.
-	 */
-	InsertionSort() {
-		this.size = 0;
-		this.tArray = new Tournament[10];
-	}
-	/**
-	 * Returns a string representation of the object.
-	 *
-	 * @return     String representation of the object.
-	 * Time complexity is N.
-	 */
-	public String toString() {
-		int res = 0;
+    /**
+     * tArray of type Tournament.
+     */
+    private Tournament[] tArray;
+    /**
+     * size of type int.
+     */
+    private int size;
+    /**
+     * Constructs the object.
+     * Time complexity is 1.
+     */
+    InsertionSort() {
+        this.size = 0;
+        final int ten = 10;
+        this.tArray = new Tournament[ten];
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     * Time complexity is N.
+     */
+    public String toString() {
+        int res = 0;
         String string = "";
         for (res = 0; res < size - 1; res++) {
             string += tArray[res].getname() + ",";
         }
         string += tArray[res].getname();
         return string;
-	}
-	/**
-	 * Adds 
-	 *
-	 * @param      g     G of type Tournament.
-	 * Time complexity is 1.
-	 */
-	public void add(Tournament g) {
-		if(size == tArray.length) {
-			resize();
-		}
-		tArray[size++] = g;
-	}
-	/**
-	 * Sorting using insertion.
-	 * Time complexity is N^2.
-	 */
-	public void insertionsort() {
-		for (int i = 0; i < size; i++) {
-			for (int j = i; j > 0; j--) {
-				if (tArray[j].compareTo(tArray[j-1]) == 1) {
-					swapping(tArray, j , j-1);
-				} else {
-					break;
-				}
-			}
-		}
-	}
-	/**
-	 * used to return the size.
-	 * Time complexity is 1.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int size() {
-		return size;
-	}
-	/**
-	 * used to resize the lenth of an array.
-	 * Time complexity is N.
-	 */
-	public void resize() {
-		tArray = Arrays.copyOf(tArray, 2*tArray.length);
-	}
-	/**
-	 * Used to swap the position of the variables when it is small.
-	 * The time complexity for resize() is 1.
-	 *
-	 *
-	 * @param      arr   The arr
-	 * @param      i      Integer i.
-	 * @param      j     Integer j.
-	 */
-	public void swapping(Comparable[] arr, int i, int j) {
-		Comparable temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
-	}
+    }
+    /**
+     * Adds.
+     *
+     * @param      g     G of type Tournament.
+     * Time complexity is 1.
+     */
+    public void add(final Tournament g) {
+        if (size == tArray.length) {
+            resize();
+        }
+        tArray[size++] = g;
+    }
+    /**
+     * Sorting using insertion.
+     * Time complexity is N^2.
+     */
+    public void insertionsort() {
+        for (int i = 0; i < size; i++) {
+            for (int j = i; j > 0; j--) {
+                if (tArray[j].compareTo(tArray[j - 1]) == 1) {
+                    swapping(tArray, j , j - 1);
+                } else {
+                    break;
+                }
+            }
+        }
+    }
+    /**
+     * used to return the size.
+     * Time complexity is 1.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int size() {
+        return size;
+    }
+    /**
+     * used to resize the lenth of an array.
+     * Time complexity is N.
+     */
+    public void resize() {
+        tArray = Arrays.copyOf(tArray, 2 * tArray.length);
+    }
+    /**
+     * Used to swap the position of the variables when it is small.
+     * The time complexity for resize() is 1.
+     *
+     *
+     * @param      arr   The arr
+     * @param      i      Integer i.
+     * @param      j     Integer j.
+     */
+    public void swapping(final Comparable[] arr, final int i, final int j) {
+        Comparable temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
 /**
  * Solution class.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		// constructor not used.
-	}
-	/**
-	 * Client program.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(String[] args) {
-		final int three = 3;
-		Scanner s = new Scanner(System.in);
-		InsertionSort is = new InsertionSort();
-		while (s.hasNext()) {
-			String[] token = s.nextLine().split(",");
-			is.add(new Tournament(token[0], Integer.parseInt(token[1]),
-                Integer.parseInt(token[2]), Integer.parseInt(token[three])));
-		}
-		is.insertionsort();
-		System.out.println(is);
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // constructor not used.
+    }
+    /**
+     * Client program.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        final int three = 3;
+        Scanner s = new Scanner(System.in);
+        InsertionSort is = new InsertionSort();
+        while (s.hasNext()) {
+            String[] token = s.nextLine().split(",");
+            is.add(new Tournament(token[0],
+                Integer.parseInt(token[1]),
+                Integer.parseInt(token[2]),
+                Integer.parseInt(token[three])));
+        }
+        is.insertionsort();
+        System.out.println(is);
+    }
 }
