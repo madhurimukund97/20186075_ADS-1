@@ -58,10 +58,10 @@ class InsertionSort {
 	public String toString() {
 		int res = 0;
         String string = "";
-        for (res = 0; res < size - 1; res++) {
+        for (res = 0; res < size; res++) {
             string += tArray[res].getname() + ",";
         }
-        // string += tArray[res].getname();
+        string += tArray[res].getname();
         return string;
 	}
 	public void add(Tournament g) {
