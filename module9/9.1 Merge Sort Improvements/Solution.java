@@ -2,11 +2,11 @@ import java.util.Scanner;
 /**
  * Class for merge.
  */
-class MergeSort{
+class MergeSort {
     /**
      * Merge sort class.
      */
-    final int x = 7;
+    private final int seven = 7;
     /**
      * Constructs the object.
      */
@@ -62,7 +62,8 @@ class MergeSort{
     public void insertion(final Comparable[] a,
         final int l, final int h) {
         for (int ind = l; ind <= h; ind++) {
-            for (int jind = ind; jind > l && low(a[jind], a[jind - 1]); jind--) {
+            for (int jind = ind; jind > l
+            	&& low(a[jind], a[jind - 1]); jind--) {
                 swapping(a, jind, jind - 1);
             }
         }
@@ -70,14 +71,14 @@ class MergeSort{
     /**
      *sorting the elements recursively.
      *time complexity is logN.
-     * @param      arr  The array
+     * @param      a  The array
      * @param      aux    The auxiliary
      * @param      l    The low
      * @param      h   The high
      */
     public void sort(final Comparable[] a, final Comparable[] aux,
         final int l, final int h) {
-        if (h <= l + x) {
+        if (h <= l + seven) {
             insertion(aux, l, h);
             System.out.println("Insertion sort method invoked...");
             return;
