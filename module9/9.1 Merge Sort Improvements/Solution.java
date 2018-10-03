@@ -33,7 +33,7 @@ class MergeSort{
                 aux[k] = a[j++];
             } else if (j > h) {
                 aux[k] = a[i++];
-            } else if (low(aux[j], aux[i])) {
+            } else if (low(a[j], a[i])) {
                 aux[k] = a[j++];
             } else {
                 aux[k] = a[i++];
@@ -120,7 +120,7 @@ class MergeSort{
      * @return    boolean.
      */
     public boolean low(final Comparable ind, final Comparable jind) {
-        return ind.compareTo(jind) < 0;
+        return ind.compareTo(jind) < 1;
     }
     /**
      * Determines if sorted.
