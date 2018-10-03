@@ -158,7 +158,7 @@ class MergeSort{
      */
     public boolean isSorted(final Comparable[] arr,
         final int l, final int h) {
-        for (int k = l; k <= h; k++) {
+        for (int k = l; k < h; k++) {
             if (low(arr[k], arr[k - 1])) {
                 return false;
             }
