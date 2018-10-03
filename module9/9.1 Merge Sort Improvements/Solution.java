@@ -4,17 +4,17 @@ import java.util.Scanner;
  */
 class MergeSort{
     /**
-     * cutoff to insertion sort.
+     * Merge sort class.
      */
     final int x = 7;
     /**
      * Constructs the object.
      */
     MergeSort() {
-        //Unused Constructor.
+        //Constructor not used.
     }
     /**
-     * merge method.
+     * compareTo method.
      * time complexity is N.
      * @param      a  The array
      * @param      aux    The auxiliary
@@ -52,12 +52,12 @@ class MergeSort{
         assert isSorted(a);
     }
     /**
-     * insertion sort algorithm.
+     * insertion sort.
      *to sort array with size less than 7.
      *time complexity is N^2/2
      * @param      a    comparable type.
-     * @param      low   The low
-     * @param      high  The high
+     * @param      l   The low
+     * @param      h  The high
      */
     public void insertion(final Comparable[] a,
         final int l, final int h) {
@@ -72,8 +72,8 @@ class MergeSort{
      *time complexity is logN.
      * @param      arr  The array
      * @param      aux    The auxiliary
-     * @param      low    The low
-     * @param      high   The high
+     * @param      l    The low
+     * @param      h   The high
      */
     public void sort(final Comparable[] a, final Comparable[] aux,
         final int l, final int h) {
@@ -96,7 +96,7 @@ class MergeSort{
         compareTo(a, aux, l, m, h);
     }
     /**
-     * to String method.
+     * to String method used to print.
      * Time complexity is n.
      * @param      arr  The array
      *
@@ -112,10 +112,10 @@ class MergeSort{
         return s;
     }
     /**
-     * comparing method.
+     * compare method.
      *
-     * @param      i comparable type.
-     * @param      j comparable type.
+     * @param      ind comparable type.
+     * @param      jind comparable type.
      *
      * @return    boolean.
      */
@@ -136,7 +136,7 @@ class MergeSort{
      * exchange method.
      * Time complexity is 1.
      *
-     * @param      a comparable type
+     * @param      arr comparable type
      * @param      i integer
      * @param      j integer
      */
