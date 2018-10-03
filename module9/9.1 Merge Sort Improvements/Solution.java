@@ -33,7 +33,7 @@ class MergeSort{
                 aux[k] = a[j++];
             } else if (j > h) {
                 aux[k] = a[i++];
-            } else if (low(a[j], a[i])) {
+            } else if (low(aux[j], aux[i])) {
                 aux[k] = a[j++];
             } else {
                 aux[k] = a[i++];
