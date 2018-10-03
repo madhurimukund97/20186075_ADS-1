@@ -63,7 +63,7 @@ class MergeSort {
         final int l, final int h) {
         for (int ind = l; ind <= h; ind++) {
             for (int jind = ind; jind > l
-            	&& low(a[jind], a[jind - 1]); jind--) {
+                && low(a[jind], a[jind - 1]); jind--) {
                 swapping(a, jind, jind - 1);
             }
         }
