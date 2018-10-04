@@ -5,9 +5,10 @@ Expected Output:
 7, 6, 5
 5, 6, 7
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:40)
-	at Solution.main(Solution.java:72)
+can't insert at this position
+can't insert at this position
+can't insert at this position
+No elements to insert.
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -25,13 +26,23 @@ Can't insert at this position.
 75, 71, 5, 9, 27, 32, 66, 17, 7
 7, 17, 66, 32, 27, 9, 5, 71, 75
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(Solution.java:40)
-	at Solution.main(Solution.java:72)
+can't insert at this position
+can't insert at this position
+can't insert at this position
+No elements to insert.
+can't insert at this position
+can't insert at this position
+can't insert at this position
+can't insert at this position
+can't insert at this position
+can't insert at this position
+can't insert at this position
+can't insert at this position
+No elements to insert.
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
-
+No elements to insert.
 ----------------------------------------

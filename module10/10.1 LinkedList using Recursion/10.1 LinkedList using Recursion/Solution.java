@@ -16,7 +16,17 @@ class LinkedList {
 	 * Constructs the object.
 	 */
 	LinkedList() {
-		// first = new Node();
+		first = null;
+		size = 0;
+	}
+	public Node insertAt (int ind, Node first, Node ele, int temp) {
+		if (ind == temp) {
+			ele.next = first;
+			size++;
+			return ele;
+		}
+		first.next = insertAt(ind, first.next, ele, temp+1);
+		return first;
 	}
 	public void print() {
 		
@@ -28,18 +38,13 @@ class LinkedList {
 		System.out.println(temp.data);
 		
 	}
-	public void insertAt(int ind, String data) {
-		Node newnode = new Node(data);
-		Node temp = first;
-		if (size == 0) {
-
+	public void insertAt(int ind, String data) throws Exception{
+		if (ind < 0 || ind > size) {
+			throw new Exception();
 		}
-		for(int i = 0; i < size - 1; i++){
-			temp = temp.next;
-		}
-		newnode.next = temp.next;
-		temp.next = newnode;
-		size++;
+		Node ele = new Node(data);
+		
+		first = insertAt (ind, first, ele, 1);
 	}
 
 	public void reverse() {
@@ -69,14 +74,20 @@ public final class Solution {
 			String[] token = s.nextLine().split(" ");
 			switch (token[0]) {
 				case "insertAt":
-					ll.insertAt(Integer.parseInt(token[1]),
-						token[2]);
+				try {
+					ll.insertAt(Integer.parseInt(token[1]), token[2]);
 					ll.print();
-					break;
+				} catch (Exception e) {
+				System.out.println("can't insert at this position");
+				}	
+				break;
 				case "reverse":
+				try {
 					ll.reverse();
-					break;
-				// case "print":
+					ll.print();
+				} catch (Exception e) {
+					System.out.println("No elements to insert.");
+				}
 				default:
 				break;
 			}
