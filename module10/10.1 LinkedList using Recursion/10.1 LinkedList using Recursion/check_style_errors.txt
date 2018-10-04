@@ -29,7 +29,7 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:100:30: Expected @param tag for 'pre'. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:100:35: Parameter curr should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:100:40: Expected @param tag for 'curr'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:113:43: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:114:17: '(' is preceded with whitespace. [MethodParamPad]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:133:29: Parameter args should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:145: Line has trailing spaces. [RegexpSingleline]
 Audit done.

@@ -108,10 +108,10 @@ class LinkedList {
     /**
      * reverse a list.
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  { exception_description }.
      */
-    public void reverse() throws Exception{
-        return;
+    public void reverse() {
+        reverse (null, first);
     }
 }
 /**
