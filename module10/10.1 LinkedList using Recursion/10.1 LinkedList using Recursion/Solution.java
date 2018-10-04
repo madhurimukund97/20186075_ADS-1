@@ -139,7 +139,7 @@ public final class Solution {
                     ll.insertAt(Integer.parseInt(token[1]), token[2]);
                     ll.print();
                 } catch (Exception e) {
-                System.out.println("can't insert at this position");
+                System.out.println("can't insert at this position.");
                 }   
                 break;
                 case "reverse":
@@ -147,7 +147,7 @@ public final class Solution {
                     ll.reverse();
                     ll.print();
                 } catch (Exception e) {
-                    System.out.println("No elements to insert.");
+                    System.out.println("No elements to reverse.");
                 }
                 default:
                 break;

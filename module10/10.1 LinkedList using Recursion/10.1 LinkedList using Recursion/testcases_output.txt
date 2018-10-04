@@ -5,10 +5,10 @@ Expected Output:
 7, 6, 5
 5, 6, 7
 Your Output: 
-can't insert at this position
-can't insert at this position
-can't insert at this position
-No elements to insert.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+No elements to reverse.
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -26,23 +26,23 @@ Can't insert at this position.
 75, 71, 5, 9, 27, 32, 66, 17, 7
 7, 17, 66, 32, 27, 9, 5, 71, 75
 Your Output: 
-can't insert at this position
-can't insert at this position
-can't insert at this position
-No elements to insert.
-can't insert at this position
-can't insert at this position
-can't insert at this position
-can't insert at this position
-can't insert at this position
-can't insert at this position
-can't insert at this position
-can't insert at this position
-No elements to insert.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+No elements to reverse.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+can't insert at this position.
+No elements to reverse.
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
-No elements to insert.
+No elements to reverse.
 ----------------------------------------
