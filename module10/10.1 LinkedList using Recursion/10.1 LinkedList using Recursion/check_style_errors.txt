@@ -1,5 +1,5 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:111:16: 'first' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:168:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:104:8: Unused @param tag for 'first'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:111:16: Expected @param tag for 'first1'. [JavadocMethod]
 Audit done.
 Checkstyle ends with 2 errors.

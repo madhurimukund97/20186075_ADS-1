@@ -108,14 +108,14 @@ import java.util.Scanner;
      * @return     { description_of_the_return_value }
      */
     public Node insertAt(final int pos,
-    final Node first, final Node obj, final int count) {
+    final Node first1, final Node obj, final int count) {
         if (pos == count) {
-            obj.setNext(first);
+            obj.setNext(first1);
             size++;
             return obj;
         }
-        first.setNext(insertAt(pos, first.getNext(), obj, count + 1));
-        return first;
+        first1.setNext(insertAt(pos, first1.getNext(), obj, count + 1));
+        return first1;
     }
 
     /**
@@ -165,6 +165,11 @@ public final class Solution {
 
     }
 
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedList list = new LinkedList();
