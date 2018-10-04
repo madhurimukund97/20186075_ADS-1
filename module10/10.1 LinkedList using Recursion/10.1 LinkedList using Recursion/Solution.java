@@ -131,7 +131,7 @@ public final class Solution {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         LinkedList ll = new LinkedList();
-        while (s.hasNext()) {
+        while (s.hasNextLine()) {
             String[] token = s.nextLine().split(" ");
             switch (token[0]) {
                 case "insertAt":
