@@ -32,10 +32,11 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:47:34: '(' is preceded with whitespace. [MethodParamPad]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:50:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:50:47: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:70:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:78: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:81: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:82: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:89: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 39 errors.

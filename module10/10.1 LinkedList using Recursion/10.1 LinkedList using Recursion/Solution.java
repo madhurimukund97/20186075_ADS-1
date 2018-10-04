@@ -47,7 +47,7 @@ class LinkedList {
 		first = insertAt (ind, first, ele, 1);
 	}
 
-	public void reverse() {
+	public void reverse() throws Exception{
 		return;
 	}
 }
