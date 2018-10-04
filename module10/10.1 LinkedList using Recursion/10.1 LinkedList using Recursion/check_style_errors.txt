@@ -2,7 +2,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:9:12: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:13:10: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:19:10: Parameter d should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:27: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:30:10: Variable 'first' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:34:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:53:26: '(' is preceded with whitespace. [MethodParamPad]
@@ -28,8 +27,8 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:100:30: Expected @param tag for 'pre'. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:100:35: Parameter curr should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:100:40: Expected @param tag for 'curr'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:114:17: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:133:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:145: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:112:17: '(' is preceded with whitespace. [MethodParamPad]
+[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:131:29: Parameter args should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:143: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 31 errors.

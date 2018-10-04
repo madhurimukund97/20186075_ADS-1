@@ -25,7 +25,7 @@ class Node {
  */
 class LinkedList {
     /**
-     * Node type first
+     * Node type first.
      */
     Node first;
     /**
@@ -106,9 +106,7 @@ class LinkedList {
         }
     }
     /**
-     * reverse a list.
-     *
-     * @throws     Exception  { exception_description }.
+     * reverse function.
      */
     public void reverse() {
         reverse (null, first);
