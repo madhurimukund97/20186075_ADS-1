@@ -6,9 +6,9 @@ Expected Output:
 5, 6, 7
 Your Output: 
 can't insert at this position.
-can't insert at this position.
-can't insert at this position.
-No elements to reverse.
+7
+7, 6
+5, 6
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -27,18 +27,18 @@ Can't insert at this position.
 7, 17, 66, 32, 27, 9, 5, 71, 75
 Your Output: 
 can't insert at this position.
+7
+7, 9
+5, 9
 can't insert at this position.
 can't insert at this position.
-No elements to reverse.
-can't insert at this position.
-can't insert at this position.
-can't insert at this position.
-can't insert at this position.
-can't insert at this position.
-can't insert at this position.
-can't insert at this position.
-can't insert at this position.
-No elements to reverse.
+5, 9, 17
+5, 9, 27, 17
+71, 5, 9, 27, 17
+75, 71, 5, 9, 27, 17
+75, 71, 5, 9, 27, 66, 17
+75, 71, 5, 9, 27, 32, 66, 17
+7, 17, 66, 32, 27, 9, 5, 71
 ----------------------------------------
 ########## Testcase 2: Passed ##########
 Expected Output: 

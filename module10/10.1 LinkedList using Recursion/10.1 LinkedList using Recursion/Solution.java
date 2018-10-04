@@ -88,7 +88,7 @@ class LinkedList {
         }
         Node ele = new Node(data);
         
-        first = insertAt (ind, first, ele, 1);
+        first = insertAt (ind, first, ele, 0);
     }
     /**
      * reverse of a string.
