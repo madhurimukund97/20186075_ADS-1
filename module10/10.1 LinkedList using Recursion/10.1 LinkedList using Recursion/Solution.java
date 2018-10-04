@@ -66,11 +66,12 @@ class LinkedList {
 	public void print() {
 		
 		Node temp = first;
+		String s = "";
 		while(temp.next != null) {
-			System.out.print(temp.data + ", ");
+			s += temp.data+", ";
 			temp = temp.next;
 		}
-		System.out.println(temp.data);
+		System.out.println(s.substring(0, s.length() - 2));
 		
 	}
 	/**
@@ -90,7 +91,7 @@ class LinkedList {
 		
 		first = insertAt (ind, first, ele, 1);
 	}
-	
+
 	public void reverse() throws Exception{
 		return;
 	}
