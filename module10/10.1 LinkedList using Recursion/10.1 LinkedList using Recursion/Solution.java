@@ -1,7 +1,21 @@
 import java.util.Scanner;
+/**
+ * Class for node.
+ */
 class Node {
+	/**
+	 * String type of data.
+	 */
 	String data;
+	/**
+	 * Node type next.
+	 */
 	Node next;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      d     String type d.
+	 */
 	Node(String d) {
 		this.data = d;
 	}
@@ -10,7 +24,13 @@ class Node {
  * LinkedList class.
  */
 class LinkedList {
+	/**
+	 * Node type first
+	 */
 	Node first;
+	/**
+	 * Integer size.
+	 */
 	int size;
 	/**
 	 * Constructs the object.
@@ -19,6 +39,17 @@ class LinkedList {
 		first = null;
 		size = 0;
 	}
+	/**
+	 * Insert at a position.
+	 * Time complexity is 1.
+	 *
+	 * @param      ind    The ind
+	 * @param      first  The first
+	 * @param      ele    The ele
+	 * @param      temp   The temporary
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Node insertAt (int ind, Node first, Node ele, int temp) {
 		if (ind == temp) {
 			ele.next = first;
@@ -28,6 +59,10 @@ class LinkedList {
 		first.next = insertAt(ind, first.next, ele, temp+1);
 		return first;
 	}
+	/**
+	 * Print method.
+	 * Time complexity is n.
+	 */
 	public void print() {
 		
 		Node temp = first;
@@ -38,6 +73,15 @@ class LinkedList {
 		System.out.println(temp.data);
 		
 	}
+	/**
+	 * InsertAt a position method.
+	 * Time complexity is 1.
+	 *
+	 * @param      ind        The ind
+	 * @param      data       The data
+	 *
+	 * @throws     Exception  { exception_description }
+	 */
 	public void insertAt(int ind, String data) throws Exception{
 		if (ind < 0 || ind > size) {
 			throw new Exception();
@@ -46,7 +90,7 @@ class LinkedList {
 		
 		first = insertAt (ind, first, ele, 1);
 	}
-
+	
 	public void reverse() throws Exception{
 		return;
 	}
