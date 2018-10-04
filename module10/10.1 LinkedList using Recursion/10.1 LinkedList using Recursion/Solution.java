@@ -1,157 +1,195 @@
 import java.util.Scanner;
+
 /**
- * Class for node.
+ * node class.
  */
-class Node {
+ class Node {
     /**
-     * String type of data.
+     * variable data.
      */
-    String data;
-    /**
-     * Node type next.
-     */
-    Node next;
-    /**
-     * Constructs the object.
-     *
-     * @param      d     String type d.
-     */
-    Node(String d) {
-        this.data = d;
-    }
+ private String data;
+ /**
+  * variable next.
+  */
+ private Node next;
+
+ /**
+  * constructor.
+  *
+  * @param      d  The value
+  */
+  Node(final String d) {
+    this.data = d;
+ }
+ /**
+  * Gets the data.
+  *
+  * @return     The data.
+  */
+ public String getData() {
+    return data;
+ }
+ /**
+  * Gets the next.
+  *
+  * @return     The next.
+  */
+ public Node getNext() {
+    return next;
+ }
+ /**
+  * Sets the next.
+  *
+  * @param      n     { next address }
+  */
+ public void setNext(final Node n) {
+    next = n;
+ }
+ /**
+  * Sets the data.
+  *
+  * @param      s     { the data }
+  */
+ public void setData(final String s) {
+    data = s;
+ }
 }
 /**
- * LinkedList class.
+ * List of linkeds.
  */
-class LinkedList {
+ class LinkedList {
     /**
-     * Node type first.
+     * variable first.
      */
-    Node first;
+    private Node first;
     /**
-     * Integer size.
+     * variable size.
      */
-    int size;
+    private int size;
+
     /**
-     * Constructs the object.
+     * constructor.
      */
     LinkedList() {
         first = null;
         size = 0;
     }
     /**
-     * Insert at a position.
-     * Time complexity is 1.
+     * insertAt function.
      *
-     * @param      ind    The ind
-     * @param      first  The first
-     * @param      ele    The ele
-     * @param      temp   The temporary
-     *
-     * @return     { description_of_the_return_value }.
-     */
-    public Node insertAt (int ind, Node first, Node ele, int temp) {
-        if (ind == temp) {
-            ele.next = first;
-            size++;
-            return ele;
-        }
-        first.next = insertAt(ind, first.next, ele, temp+1);
-        return first;
-    }
-    /**
-     * Print method.
-     * Time complexity is n.
-     */
-    public void print() {
-        
-        Node temp = first;
-        String s = "";
-        while(temp.next != null) {
-            s += temp.data+", ";
-            temp = temp.next;
-        }
-        System.out.println(s.substring(0, s.length() - 2)); 
-    }
-    /**
-     * InsertAt a position method.
-     * Time complexity is 1.
-     *
-     * @param      ind        The ind
+     * @param      pos        The position
      * @param      data       The data
      *
-     * @throws     Exception  { exception_description }.
+     * @throws     Exception  { exception_description }
      */
-    public void insertAt(int ind, String data) throws Exception {
-        if (ind < 0 || ind > size) {
+    public void insertAt(final int pos,
+    final String data) throws Exception {
+        if (pos < 0 || pos > size) {
             throw new Exception();
         }
-        Node ele = new Node(data);
-        
-        first = insertAt (ind, first, ele, 0);
+        Node obj = new Node(data);
+        // if (pos == 0) {
+        //  obj.next = first;
+        //  first = obj;
+        //  size++;
+        //  return;
+        // }
+        first = insertAt(pos, first, obj, 0);
     }
+
     /**
-     * reverse of a string.
-     * Time complexity is 1.
+     * { function_description }.
      *
-     * @param      previous  The previous
-     * @param      current   The current
+     * @param      pos    The position
+     * @param      first  The first
+     * @param      obj    The object
+     * @param      count  The count
+     *
+     * @return     { description_of_the_return_value }
      */
-    public void reverse(Node pre, Node curr) {
+    public Node insertAt(final int pos,
+    final Node first, final Node obj, final int count) {
+        if (pos == count) {
+            obj.setNext(first);
+            size++;
+            return obj;
+        }
+        first.setNext(insertAt(pos, first.getNext(), obj, count + 1));
+        return first;
+    }
+
+    /**
+     * { function_description }.
+     */
+    public void reverse() {
+        reverse(null, first);
+    }
+
+    /**
+     * { function_description }.
+     *
+     * @param      pre  The pre
+     * @param      curr   The curr
+     */
+    public void reverse(final Node pre, final Node curr) {
         if (curr != null) {
-            reverse(curr, curr.next);
-            curr.next = pre;
+            reverse(curr, curr.getNext());
+            curr.setNext(pre);
         } else {
             first = pre;
         }
     }
+
     /**
-     * reverse function.
+     * { function_description }.
      */
-    public void reverse() {
-        reverse (null, first);
+    public void print() {
+        Node temp = first;
+        String s = "";
+        while (temp != null) {
+            s += temp.getData() + ", ";
+            temp = temp.getNext();
+        }
+        System.out.println(s.substring(0, s.length() - 2));
     }
 }
+
 /**
- * Solution class program.
+ * solution class.
  */
 public final class Solution {
     /**
      * Constructs the object.
-     * Time complexity of Solution is 1.
-    */
-    private Solution() {
-        // constructor not used.
-    }
-    /**
-     * Client program.
-     *
-     * @param      args  The arguments
      */
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        LinkedList ll = new LinkedList();
-        while (s.hasNextLine()) {
-            String[] token = s.nextLine().split(" ");
+    private Solution() {
+
+    }
+
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LinkedList list = new LinkedList();
+        while (sc.hasNextLine()) {
+            String[] token = sc.nextLine().split(" ");
             switch (token[0]) {
                 case "insertAt":
                 try {
-                    ll.insertAt(Integer.parseInt(token[1]), token[2]);
-                    ll.print();
-                } catch (Exception e) {
-                System.out.println("can't insert at this position.");
-                }   
+                    list.insertAt(Integer.parseInt(token[1]), token[2]);
+                    list.print();
+            } catch (Exception e) {
+                System.out.println("Can't insert at this position.");
+            }
                 break;
                 case "reverse":
                 try {
-                    ll.reverse();
-                    ll.print();
-                } catch (Exception e) {
-                    System.out.println("No elements to reverse.");
-                }
+                list.reverse();
+                list.print();
+            } catch (Exception e) {
+                System.out.println("No elements to reverse.");
+            }
                 default:
                 break;
             }
         }
     }
 }
+
