@@ -82,7 +82,7 @@ class LinkedList {
      *
      * @throws     Exception  { exception_description }.
      */
-    public void insertAt(int ind, String data) throws Exception{
+    public void insertAt(int ind, String data) throws Exception {
         if (ind < 0 || ind > size) {
             throw new Exception();
         }

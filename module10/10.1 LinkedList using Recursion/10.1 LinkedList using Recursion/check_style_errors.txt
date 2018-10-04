@@ -20,7 +20,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:74: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:85:26: Parameter ind should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:85:35: Parameter data should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:85:64: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:91:26: '(' is preceded with whitespace. [MethodParamPad]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:97:8: Unused @param tag for 'previous'. [JavadocMethod]
@@ -33,4 +32,4 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:133:29: Parameter args should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module10\10.1 LinkedList using Recursion\10.1 LinkedList using Recursion\Solution.java:145: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 32 errors.
