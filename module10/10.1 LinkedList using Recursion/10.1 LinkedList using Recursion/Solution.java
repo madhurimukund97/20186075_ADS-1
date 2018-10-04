@@ -101,7 +101,7 @@ import java.util.Scanner;
      * { function_description }.
      *
      * @param      pos    The position
-     * @param      first  The first
+     * @param      first1  The first
      * @param      obj    The object
      * @param      count  The count
      *
