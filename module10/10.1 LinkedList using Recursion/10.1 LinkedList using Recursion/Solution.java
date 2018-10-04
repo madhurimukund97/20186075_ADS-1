@@ -90,7 +90,26 @@ class LinkedList {
         
         first = insertAt (ind, first, ele, 1);
     }
-
+    /**
+     * reverse of a string.
+     * Time complexity is 1.
+     *
+     * @param      previous  The previous
+     * @param      current   The current
+     */
+    public void reverse(Node pre, Node curr) {
+        if (curr != null) {
+            reverse(curr, curr.next);
+            curr.next = pre;
+        } else {
+            first = pre;
+        }
+    }
+    /**
+     * reverse a list.
+     *
+     * @throws     Exception  { exception_description }
+     */
     public void reverse() throws Exception{
         return;
     }
