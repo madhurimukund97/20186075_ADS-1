@@ -193,6 +193,5 @@ public final class Solution {
             Student st = new Student();
             st.sort();
         }
-        
     }
 }
