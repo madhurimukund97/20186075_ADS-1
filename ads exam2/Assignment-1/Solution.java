@@ -125,11 +125,10 @@ class Student {
         return this.category;
     }
     /**
-     * Priority that means in descending order.
-     *
-     * @param      total1  The total
+     * Priority method.
      */
-    public void priority(final int total1) {
+    public String priority() {
+        return null;
     }
     /**
      * Returns a string representation of the object.
@@ -192,6 +191,8 @@ public final class Solution {
             s.nextLine();
             Student st = new Student();
             st.sort();
+            System.out.println("\n");
+            st.priority();
         }
     }
 }
