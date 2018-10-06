@@ -28,17 +28,7 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:38:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:41:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:44:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:51: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:51:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:52:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:52:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:55:21: Name 'NQ' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:56:21: Name 'NV' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:57:21: Name 'UR' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:58:21: Name 'BC' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:59:21: Name 'SC' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:60:21: Name 'ST' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:61:37: Must have at least one statement. [EmptyBlock]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:45: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:67:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 31 errors.

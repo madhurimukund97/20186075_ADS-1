@@ -42,23 +42,39 @@ class Student {
 		return this.category;
 	}
 	public String toString() {
-		String str = "";
-		
-		return str;
+		System.out.println(this.name + ", " + this.total + ", " + this.category);
+		System.out.println("\n");
+		return "l";
+
 
 	}
 }
+/**
+ * Main class Solution.
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor not used.
+	}
+	/**
+	 * Client program.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		// Student st = new Student(nme, d, m1, m2, m3, t, c);
-		int NQ = s.nextInt();
-		int NV = s.nextInt();
-		int UR = s.nextInt();
-		int BC = s.nextInt();
-		int SC = s.nextInt();
-		int ST = s.nextInt();
+		int nq = s.nextInt();
+		int nv = s.nextInt();
+		int ur = s.nextInt();
+		int bc = s.nextInt();
+		int sc = s.nextInt();
+		int st = s.nextInt();
 		while (s.hasNext()) {
+			s.nextLine();
 
 		}
 
