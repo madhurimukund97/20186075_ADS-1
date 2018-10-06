@@ -1,2 +1,10 @@
 Starting audit...
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:37:8: Unused @param tag for 'name1'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:38:8: Unused @param tag for 'dob1'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:39:8: Unused @param tag for 'smarks1'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:40:8: Unused @param tag for 'smarks2'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:41:8: Unused @param tag for 'smarks3'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:42:8: Unused @param tag for 'total1'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:43:8: Unused @param tag for 'category1'. [JavadocMethod]
 Audit done.
+Checkstyle ends with 7 errors.

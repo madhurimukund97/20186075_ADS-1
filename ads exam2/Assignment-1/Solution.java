@@ -42,16 +42,17 @@ class Student {
      * @param      total1     The total 1
      * @param      category1  The category 1
      */
-    Student(final String name1, final String dob1, final int smarks1,
-        final int smarks2, final int smarks3, final int total1,
-        final String category1) {
-        this.name = name1;
-        this.dob = dob1;
-        this.marks1 = smarks1;
-        this.marks2 = smarks2;
-        this.marks3 = smarks3;
-        this.total = total1;
-        this.category = category1;
+    Student() {
+        // final String name1, final String dob1, final int smarks1,
+        // final int smarks2, final int smarks3, final int total1,
+        // final String category1
+        // this.name = name1;
+        // this.dob = dob1;
+        // this.marks1 = smarks1;
+        // this.marks2 = smarks2;
+        // this.marks3 = smarks3;
+        // this.total = total1;
+        // this.category = category1;
     }
     /**
      * Gets the name.
@@ -109,12 +110,20 @@ class Student {
     public String getCategory() {
         return this.category;
     }
+    // /**
+    //  * Priority thata means in descending order.
+    //  *
+    //  * @param      total  The total
+    //  */
+    // public void priority(int total) {
+    //     for (int i = 0; i < )
+    // }
     /**
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
      */
-    public String toString() {
+    public String print() {
         System.out.println(this.name + ", "
             + this.total + ", " + this.category);
         System.out.println("\n");
@@ -138,17 +147,17 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        // Student st = new Student(nme, d, m1, m2, m3, t, c);
+        Student st = new Student();
         int nq = s.nextInt();
         int nv = s.nextInt();
         int ur = s.nextInt();
         int bc = s.nextInt();
         int sc = s.nextInt();
-        int st = s.nextInt();
+        int stcategory = s.nextInt();
         while (s.hasNext()) {
             s.nextLine();
-
         }
+        st.print();
 
     }
 }
