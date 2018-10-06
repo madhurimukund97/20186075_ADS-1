@@ -191,7 +191,8 @@ public final class Solution {
         while (s.hasNext()) {
             s.nextLine();
             Student st = new Student();
+            st.sort();
         }
-        // st.sort();
+        
     }
 }
