@@ -32,7 +32,7 @@ class Student {
      */
     private int total;
     /**
-     * constructor of type student. 
+     * constructor of type student.
      */
     private Student[] sArray;
     /**
@@ -150,7 +150,6 @@ class Student {
      * get the priority.
      */
     public void sort() {
-        
     }
 }
 /**
