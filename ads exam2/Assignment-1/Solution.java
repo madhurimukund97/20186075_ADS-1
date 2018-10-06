@@ -127,10 +127,9 @@ class Student {
     /**
      * Priority that means in descending order.
      *
-     * @param      total  The total
+     * @param      total1  The total
      */
-    public void priority(int total) {
-        
+    public void priority(final int total1) {   
     }
     /**
      * Returns a string representation of the object.
@@ -151,9 +150,9 @@ class Student {
      */
     public void sort() {
         Student temp;
-        for(int i = 0; i <= size - 1; i++) {
-            for(int j = 0; j <= size - 1; j++) {
-                if(sArray[j].total < sArray[j+1].total) {
+        for (int i = 0; i <= size - 1; i++) {
+            for (int j = 0; j <= size - 1; j++) {
+                if (sArray[j].total < sArray[j + 1].total) {
                     temp = sArray[j];
                     sArray[j] = sArray[j + 1];
                     sArray[j + 1] = temp;
@@ -161,9 +160,9 @@ class Student {
             }
         }
         for (int k = 0; k < size; k++) {
-           System.out.println(sArray[k].name + ", " + sArray[k].total + ", " + sArray[k].category);
-        }
-           
+           System.out.println(sArray[k].name + ", "
+            + sArray[k].total + ", " + sArray[k].category);
+        }        
     }
 }
 /**
@@ -183,7 +182,6 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        Student st = new Student();
         int nq = Integer.parseInt(s.nextLine());
         int nv = Integer.parseInt(s.nextLine());
         int ur = Integer.parseInt(s.nextLine());
@@ -192,8 +190,8 @@ public final class Solution {
         int stcategory = Integer.parseInt(s.nextLine());
         while (s.hasNext()) {
             s.nextLine();
+            Student st = new Student();
         }
-        st.sort();
-
+        // st.sort();
     }
 }
