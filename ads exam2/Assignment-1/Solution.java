@@ -150,6 +150,20 @@ class Student {
      * get the priority.
      */
     public void sort() {
+        Student temp;
+        for(int i = 0; i <= size - 1; i++) {
+            for(int j = 0; j <= size - 1; j++) {
+                if(sArray[j].total < sArray[j+1].total) {
+                    temp = sArray[j];
+                    sArray[j] = sArray[j + 1];
+                    sArray[j + 1] = temp;
+                }
+            }
+        }
+        for (int j = 0; j < size; j++) {
+           System.out.println(sArray[j].name + ", " + sArray[j].total + ", " + sArray[j].category);
+        }
+           
     }
 }
 /**

@@ -33,7 +33,7 @@ priya,72,SC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.print(Solution.java:146)
-	at Solution.main(Solution.java:182)
+	at Solution.main(Solution.java:196)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -79,7 +79,7 @@ priya,72,SC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.print(Solution.java:146)
-	at Solution.main(Solution.java:182)
+	at Solution.main(Solution.java:196)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -100,7 +100,7 @@ priya,76,SC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.print(Solution.java:146)
-	at Solution.main(Solution.java:182)
+	at Solution.main(Solution.java:196)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -124,7 +124,7 @@ Tanya,66,BC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.print(Solution.java:146)
-	at Solution.main(Solution.java:182)
+	at Solution.main(Solution.java:196)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -175,7 +175,7 @@ Arjun,75,Open
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.print(Solution.java:146)
-	at Solution.main(Solution.java:182)
+	at Solution.main(Solution.java:196)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -228,5 +228,5 @@ varsha,66,BC
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at Student.print(Solution.java:146)
-	at Solution.main(Solution.java:182)
+	at Solution.main(Solution.java:196)
 ----------------------------------------
