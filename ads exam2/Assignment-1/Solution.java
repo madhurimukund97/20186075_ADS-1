@@ -32,17 +32,31 @@ class Student {
      */
     private int total;
     /**
-     * Constructs the object.
-     *
-     * @param      name1      The name 1
-     * @param      dob1       The dob 1
-     * @param      smarks1    The smarks 1
-     * @param      smarks2    The smarks 2
-     * @param      smarks3    The smarks 3
-     * @param      total1     The total 1
-     * @param      category1  The category 1
+     * constructor of type student. 
      */
+    private Student[] sArray;
+    /**
+     * Integer type.
+     */
+    private int size;
+    // /**
+    //  * Constructs the object.
+    //  *
+    //  * @param      name1      The name 1
+    //  * @param      dob1       The dob 1
+    //  * @param      smarks1    The smarks 1
+    //  * @param      smarks2    The smarks 2
+    //  * @param      smarks3    The smarks 3
+    //  * @param      total1     The total 1
+    //  * @param      category1  The category 1
+    //  */
+    /**
+     * constructs an object.
+    */
     Student() {
+        size = 0;
+        final int ten = 10;
+        sArray = new Student[ten];
         // final String name1, final String dob1, final int smarks1,
         // final int smarks2, final int smarks3, final int total1,
         // final String category1
@@ -124,10 +138,19 @@ class Student {
      * @return     String representation of the object.
      */
     public String print() {
-        System.out.println(this.name + ", "
-            + this.total + ", " + this.category);
-        System.out.println("\n");
-        return "l";
+        int res = 0;
+        String string = "";
+        for (res = 0; res < size - 1; res++) {
+            string += sArray[res].getName() + ", ";
+        }
+        string += sArray[res].getName();
+        return string;
+    }
+    /**
+     * get the priority.
+     */
+    public void sort() {
+        
     }
 }
 /**

@@ -31,7 +31,9 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-null, 0, null
+Exception in thread "main" java.lang.NullPointerException
+	at Student.print(Solution.java:146)
+	at Solution.main(Solution.java:183)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -75,7 +77,9 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-null, 0, null
+Exception in thread "main" java.lang.NullPointerException
+	at Student.print(Solution.java:146)
+	at Solution.main(Solution.java:183)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -94,7 +98,9 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-null, 0, null
+Exception in thread "main" java.lang.NullPointerException
+	at Student.print(Solution.java:146)
+	at Solution.main(Solution.java:183)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -116,7 +122,9 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-null, 0, null
+Exception in thread "main" java.lang.NullPointerException
+	at Student.print(Solution.java:146)
+	at Solution.main(Solution.java:183)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -165,7 +173,9 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-null, 0, null
+Exception in thread "main" java.lang.NullPointerException
+	at Student.print(Solution.java:146)
+	at Solution.main(Solution.java:183)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -216,5 +226,7 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-null, 0, null
+Exception in thread "main" java.lang.NullPointerException
+	at Student.print(Solution.java:146)
+	at Solution.main(Solution.java:183)
 ----------------------------------------
