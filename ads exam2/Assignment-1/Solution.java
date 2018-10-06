@@ -170,12 +170,12 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         Student st = new Student();
-        int nq = s.nextInt();
-        int nv = s.nextInt();
-        int ur = s.nextInt();
-        int bc = s.nextInt();
-        int sc = s.nextInt();
-        int stcategory = s.nextInt();
+        int nq = Integer.parseInt(s.nextLine());
+        int nv = Integer.parseInt(s.nextLine());
+        int ur = Integer.parseInt(s.nextLine());
+        int bc = Integer.parseInt(s.nextLine());
+        int sc = Integer.parseInt(s.nextLine());
+        int stcategory = Integer.parseInt(s.nextLine());
         while (s.hasNext()) {
             s.nextLine();
         }
