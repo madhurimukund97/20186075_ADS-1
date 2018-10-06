@@ -137,15 +137,15 @@ class Student {
      *
      * @return     String representation of the object.
      */
-    public String print() {
-        int res = 0;
-        String string = "";
-        for (res = 0; res < size - 1; res++) {
-            string += sArray[res].getName() + ", ";
-        }
-        string += sArray[res].getName();
-        return string;
-    }
+    // public String print() {
+    //     int res = 0;
+    //     String string = "";
+    //     for (res = 0; res < size - 1; res++) {
+    //         string += sArray[res].getName() + ", ";
+    //     }
+    //     string += sArray[res].getName();
+    //     return string;
+    // }
     /**
      * get the priority.
      */
@@ -193,7 +193,7 @@ public final class Solution {
         while (s.hasNext()) {
             s.nextLine();
         }
-        st.print();
+        // st.print();
 
     }
 }
