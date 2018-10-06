@@ -124,17 +124,11 @@ class Student {
     public String getCategory() {
         return this.category;
     }
-    /**
-     * Priority method.
-     */
-    public String priority() {
-        return null;
-    }
-    /**
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
-     */
+    // /**
+    //  * Returns a string representation of the object.
+    //  *
+    //  * @return     String representation of the object.
+    //  */
     // public String print() {
     //     int res = 0;
     //     String string = "";
@@ -192,7 +186,7 @@ public final class Solution {
             Student st = new Student();
             st.sort();
             System.out.println("\n");
-            st.priority();
+            // st.priority();
         }
     }
 }

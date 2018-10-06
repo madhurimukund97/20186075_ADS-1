@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:130: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
