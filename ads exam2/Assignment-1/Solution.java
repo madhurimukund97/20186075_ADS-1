@@ -1,14 +1,50 @@
 import java.util.Scanner;
-
+/**
+ * Class for student.
+ */
 class Student {
+	/**
+	 * { var_description }
+	 */
 	private String name;
+	/**
+	 * { var_description }
+	 */
 	private String dob;
+	/**
+	 * { var_description }
+	 */
 	private String category;
+	/**
+	 * { var_description }
+	 */
 	private int marks1;
+	/**
+	 * { var_description }
+	 */
 	private int marks2;
+	/**
+	 * { var_description }
+	 */
 	private int marks3;
+	/**
+	 * { var_description }
+	 */
 	private int total;
-	Student(String name1, String dob1, int smarks1, int smarks2, int smarks3, int total1, String category1) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      name1      The name 1
+	 * @param      dob1       The dob 1
+	 * @param      smarks1    The smarks 1
+	 * @param      smarks2    The smarks 2
+	 * @param      smarks3    The smarks 3
+	 * @param      total1     The total 1
+	 * @param      category1  The category 1
+	 */
+	Student(final String name1, final String dob1, final int smarks1,
+		final int smarks2, final int smarks3, final int total1,
+		final String category1) {
 		this.name = name1;
 		this.dob = dob1;
 		this.marks1 = smarks1;
@@ -17,36 +53,71 @@ class Student {
 		this.total = total1;
 		this.category = category1;
 	}
-	public void setName(String n) {
-		name = n;
-	}
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * Gets the dob.
+	 *
+	 * @return     The dob.
+	 */
 	public String getDob() {
 		return this.dob;
 	}
+	/**
+	 * Gets the marks 1.
+	 *
+	 * @return     The marks 1.
+	 */
 	public int getMarks1() {
 		return this.marks1;
 	}
+	/**
+	 * Gets the marks 2.
+	 *
+	 * @return     The marks 2.
+	 */
 	public int getMarks2() {
 		return this.marks2;
 	}
+	/**
+	 * Gets the marks 3.
+	 *
+	 * @return     The marks 3.
+	 */
 	public int getMarks3() {
 		return this.marks3;
 	}
+	/**
+	 * Gets the total.
+	 *
+	 * @return     The total.
+	 */
 	public int getTotal() {
 		return this.total;
 	}
+	/**
+	 * Gets the category.
+	 *
+	 * @return     The category.
+	 */
 	public String getCategory() {
 		return this.category;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		System.out.println(this.name + ", " + this.total + ", " + this.category);
 		System.out.println("\n");
 		return "l";
-
-
 	}
 }
 /**
