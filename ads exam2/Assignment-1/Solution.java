@@ -153,8 +153,8 @@ class Student {
             }
         }
         for (int k = 0; k < size; k++) {
-           System.out.println(sArray[k].name + ", "
-            + sArray[k].total + ", " + sArray[k].category);
+           System.out.println(sArray[k].name + ","
+            + sArray[k].total + "," + sArray[k].category);
         }
     }
 }
