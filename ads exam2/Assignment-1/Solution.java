@@ -129,7 +129,7 @@ class Student {
      *
      * @param      total1  The total
      */
-    public void priority(final int total1) {   
+    public void priority(final int total1) {  
     }
     /**
      * Returns a string representation of the object.
@@ -162,7 +162,7 @@ class Student {
         for (int k = 0; k < size; k++) {
            System.out.println(sArray[k].name + ", "
             + sArray[k].total + ", " + sArray[k].category);
-        }        
+        }
     }
 }
 /**
