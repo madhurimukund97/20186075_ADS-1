@@ -124,14 +124,14 @@ class Student {
     public String getCategory() {
         return this.category;
     }
-    // /**
-    //  * Priority thata means in descending order.
-    //  *
-    //  * @param      total  The total
-    //  */
-    // public void priority(int total) {
-    //     for (int i = 0; i < )
-    // }
+    /**
+     * Priority that means in descending order.
+     *
+     * @param      total  The total
+     */
+    public void priority(int total) {
+        
+    }
     /**
      * Returns a string representation of the object.
      *
@@ -160,8 +160,8 @@ class Student {
                 }
             }
         }
-        for (int j = 0; j < size; j++) {
-           System.out.println(sArray[j].name + ", " + sArray[j].total + ", " + sArray[j].category);
+        for (int k = 0; k < size; k++) {
+           System.out.println(sArray[k].name + ", " + sArray[k].total + ", " + sArray[k].category);
         }
            
     }
