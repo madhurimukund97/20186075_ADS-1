@@ -193,7 +193,7 @@ public final class Solution {
         while (s.hasNext()) {
             s.nextLine();
         }
-        // st.print();
+        st.sort();
 
     }
 }
