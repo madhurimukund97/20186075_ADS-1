@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:118: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\20186075_ADS-1\ads exam2\Assignment-1\Solution.java:138:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.

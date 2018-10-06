@@ -115,7 +115,8 @@ class Student {
      * @return     String representation of the object.
      */
     public String toString() {
-        System.out.println(this.name + ", " + this.total + ", " + this.category);
+        System.out.println(this.name + ", "
+            + this.total + ", " + this.category);
         System.out.println("\n");
         return "l";
     }
@@ -135,7 +136,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         // Student st = new Student(nme, d, m1, m2, m3, t, c);
         int nq = s.nextInt();
