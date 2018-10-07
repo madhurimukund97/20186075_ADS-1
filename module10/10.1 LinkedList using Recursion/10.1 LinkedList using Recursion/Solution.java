@@ -15,6 +15,7 @@ import java.util.Scanner;
 
  /**
   * constructor.
+  * Time complexity is 1.
   *
   * @param      d  The value
   */
@@ -23,6 +24,7 @@ import java.util.Scanner;
  }
  /**
   * Gets the data.
+  * Time complexity is 1.
   *
   * @return     The data.
   */
@@ -31,6 +33,7 @@ import java.util.Scanner;
  }
  /**
   * Gets the next.
+  * Time complexity is 1.
   *
   * @return     The next.
   */
@@ -39,6 +42,7 @@ import java.util.Scanner;
  }
  /**
   * Sets the next.
+  * Time complexity is 1.
   *
   * @param      n     { next address }
   */
@@ -47,6 +51,7 @@ import java.util.Scanner;
  }
  /**
   * Sets the data.
+  * Time complexity is 1.
   *
   * @param      s     { the data }
   */
@@ -69,6 +74,7 @@ import java.util.Scanner;
 
     /**
      * constructor.
+     * Time complexity is 1.
      */
     LinkedList() {
         first = null;
@@ -76,6 +82,7 @@ import java.util.Scanner;
     }
     /**
      * insertAt function.
+     * Time complexity is 1.
      *
      * @param      pos        The position
      * @param      data       The data
@@ -99,6 +106,7 @@ import java.util.Scanner;
 
     /**
      * { function_description }.
+     * Time complexity is 1.
      *
      * @param      pos    The position
      * @param      first1  The first
@@ -119,14 +127,16 @@ import java.util.Scanner;
     }
 
     /**
-     * { function_description }.
+     * { reverse }.
+     * Time complexity is 1.
      */
     public void reverse() {
         reverse(null, first);
     }
 
     /**
-     * { function_description }.
+     * { reverse }.
+     * Time complexity is 1.
      *
      * @param      pre  The pre
      * @param      curr   The curr
@@ -141,7 +151,8 @@ import java.util.Scanner;
     }
 
     /**
-     * { function_description }.
+     * { print method }.
+     * Time complexity is N.
      */
     public void print() {
         Node temp = first;
@@ -160,6 +171,7 @@ import java.util.Scanner;
 public final class Solution {
     /**
      * Constructs the object.
+     * Time complexity is 1.
      */
     private Solution() {
 
@@ -167,6 +179,7 @@ public final class Solution {
 
     /**
      * main function.
+     * Time complexity is N.
      *
      * @param      args  The arguments
      */
@@ -197,4 +210,3 @@ public final class Solution {
         }
     }
 }
-
