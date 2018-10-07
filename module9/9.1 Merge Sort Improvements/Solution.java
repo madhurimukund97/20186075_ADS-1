@@ -9,6 +9,7 @@ class MergeSort {
     private final int seven = 7;
     /**
      * Constructs the object.
+     * Time complexity is 1.
      */
     MergeSort() {
         //Constructor not used.
@@ -44,6 +45,7 @@ class MergeSort {
     /**
      *
      * sort method.
+     * Time complexity is N.
      * @param      a comparable
      */
     public void sort(final Comparable[] a) {
@@ -114,7 +116,7 @@ class MergeSort {
     }
     /**
      * compare method.
-     *
+     * Time complexity is 1.
      * @param      ind comparable type.
      * @param      jind comparable type.
      *
@@ -125,6 +127,7 @@ class MergeSort {
     }
     /**
      * Determines if sorted.
+     * Time complexity is 1.
      *
      * @param      arr array
      *
