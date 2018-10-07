@@ -63,10 +63,10 @@ class Sort {
      * usd to sort.
      * time complexity is O(log N).
      *
-     * @param      arr  The arguments
-     * @param      low  The arguments
-     * @param      high  The arguments
-     * @param      cutOff  The arguments
+     * @param      array  The arguments
+     * @param      l  The arguments
+     * @param      h  The arguments
+     * @param      c  The arguments
      */
     public void sort(final Comparable[] array, final int l,
      final int h, final int c) {
@@ -85,7 +85,7 @@ class Sort {
      * { function_description }
      *
      * @param      array   The array
-     * @param      cutOff  The cut off
+     * @param      c  The cut off
      */
     public void sort(final Comparable[] array, final int c) {
         sort(array, 0, array.length - 1, c);
@@ -95,8 +95,8 @@ class Sort {
      * partition.
      *
      * @param      arr   The arr
-     * @param      low   The low
-     * @param      high  The high
+     * @param      l   The low
+     * @param      h  The high
      *
      * @return     { returns a array. }
      */
@@ -137,7 +137,9 @@ class Sort {
         return a1.compareTo(b1) < 0;
     }
 }
-
+/**
+ * Solution class.
+ */
 public final class Solution {
     /**.
      * Constructs the object.
