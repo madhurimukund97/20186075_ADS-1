@@ -1,0 +1,19 @@
+Time complexity of this problem is O(N).
+for the given string hello.
+ pair(hello)
+ h+pair(ello)      
+ e+pair(llo)       
+ l+*+pair(lo)              
+ l+pair(o)               
+ string is hel*lo
+
+
+String pair(String s){
+    if(s.length()==1){
+        return s;
+    }
+    if(s.charAt(0) == s.charAt(1)){
+        return s.charAt(0)+"*"+pair(s.substring(1));
+    }
+    return s.charAt(0)+pair(s.substring(1));
+}
