@@ -29,14 +29,15 @@ class Sort {
     }
      /**
      *It swaps the elements only once
-     * { used to swap }
+     * { used to swap }.
      * time complexity of this method is O(1)
      *
      * @param      array  The arguments
      * @param      k  The arguments
      * @param      minimum  The arguments
      */
-    public void swaping(final Comparable[] array, final int k, final int minimum) {
+    public void swaping(final Comparable[] array,
+        final int k, final int minimum) {
         Comparable res = array[k];
         array[k] = array[minimum];
         array[minimum] = res;
@@ -94,7 +95,7 @@ class Sort {
      * time complexity is O(N)
      * partition.
      *
-     * @param      arr   The arr
+     * @param      array   The arr
      * @param      l   The low
      * @param      h  The high
      *
