@@ -5,6 +5,7 @@ import java.util.Scanner;
 class Sort {
     /**.
      * Constructs the object.
+     * Time complexity is 1.
      */
     Sort() {
         /**.
@@ -104,18 +105,18 @@ class Sort {
         int i = l;
         int j = h + 1;
         while (true) {
-            if (i >= j) {
-                break;
+            while (low(array[++i], array[l])) {
+                if (i == h) {
+                    break;
+                }
             }
             while (low(array[l], array[--j])) {
                 if (j == l) {
                     break;
                 }
             }
-            while (low(array[++i], array[l])) {
-                if (i == h) {
-                    break;
-                }
+            if (i >= j) {
+                break;
             }
             swaping(array, i, j);
         }
