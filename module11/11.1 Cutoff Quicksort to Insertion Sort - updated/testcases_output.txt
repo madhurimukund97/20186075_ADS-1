@@ -26,19 +26,15 @@ insertionSort called
 [A, E, E, I, N, O, Q, S, S, T, U, Y]
 Your Output: 
 [X, O, R, E, E, L, A, M, S, P, T]
-[S, O, R, E, E, L, A, X, M, P, T]
-[X, O, R, E, E, L, S, A, M, P, T]
-[S, O, R, E, E, X, L, A, M, P, T]
-[X, O, R, E, S, E, L, A, M, P, T]
-[S, O, R, X, E, E, L, A, M, P, T]
+[M, O, R, E, E, L, A, X, S, P, T]
+[R, A, L, E, M, E, O, X, S, P, T]
+[E, A, L, R, M, E, O, X, S, P, T]
 insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
-insertionSort called
-insertionSort called
-[O, R, S, X, E, E, L, A, M, P, T]
+[A, E, L, R, M, E, O, X, S, P, T]
 [Y, A, E, E, Q, U, S, S, T, I, O, N]
 insertionSort called
 [A, Y, E, Q, E, U, S, S, T, I, O, N]
@@ -101,11 +97,38 @@ insertionSort called
 insertionSort called
 insertionSort called
 [2, 3, 1, 4, 5, 6, 7]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at Sort.partition(Solution.java:115)
-	at Sort.sort(Solution.java:77)
-	at Sort.sort(Solution.java:90)
-	at Solution.main(Solution.java:169)
+[-7, 8, 7, 6, 5, 4, -9, -8, 9]
+[8, -7, 7, 6, 5, 4, -9, -8, 9]
+insertionSort called
+[8, 7, -7, 6, 5, 4, -9, -8, 9]
+insertionSort called
+[8, 7, 6, -7, 5, 4, -9, -8, 9]
+insertionSort called
+[8, 7, 6, 5, -7, 4, -9, -8, 9]
+insertionSort called
+[8, 7, 6, 5, 4, -7, -9, -8, 9]
+insertionSort called
+[8, 7, 6, 5, 4, -9, -7, -8, 9]
+insertionSort called
+insertionSort called
+insertionSort called
+[8, 7, 6, 5, 4, -9, -7, -8, 9]
+[12123.44, 12122.45, 11121.55, 13212.54]
+insertionSort called
+insertionSort called
+[12123.44, 12122.45, 11121.55, 13212.54]
+[men, few, hut, egg, jay]
+insertionSort called
+insertionSort called
+[few, men, hut, egg, jay]
+[rap, joy, owl, gig, wee]
+insertionSort called
+insertionSort called
+[joy, rap, owl, gig, wee]
+insertionSort called
+[fee, tap, tar, wad, was]
+insertionSort called
+[all, bad, dug, jam, yet]
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -143,13 +166,13 @@ insertionSort called
 insertionSort called
 [jot, nob, sky, sob, tag]
 [110, 100, 1, 010, 100, 001, 101]
-[100, 100, 1, 110, 010, 001, 101]
-[100, 100, 1, 110, 010, 001, 101]
+[010, 100, 1, 110, 100, 001, 101]
+[100, 010, 1, 110, 100, 001, 101]
 insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
-[100, 100, 1, 110, 010, 001, 101]
+[100, 010, 1, 110, 100, 001, 101]
 [132, 112, 121, 123, 122, 133, 131]
 insertionSort called
 insertionSort called

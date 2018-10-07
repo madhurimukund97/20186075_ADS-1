@@ -113,7 +113,7 @@ class Sort {
                 }
             }
             while (low(array[++i], array[l])) {
-                if (i == h + 1) {
+                if (i == h) {
                     break;
                 }
             }
