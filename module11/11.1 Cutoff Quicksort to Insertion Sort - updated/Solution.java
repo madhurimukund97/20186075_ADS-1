@@ -87,7 +87,7 @@ class Sort {
      * @param      cutOff  The cut off
      */
     public void sort(final Comparable[] array, final int c) {
-        sort(array, 0, array.length, c);
+        sort(array, 0, array.length - 1, c);
     }
     /**
      * time complexity is O(N)
