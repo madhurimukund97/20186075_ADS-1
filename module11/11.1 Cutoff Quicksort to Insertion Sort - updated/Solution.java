@@ -102,7 +102,7 @@ class Sort {
     public int partition(final Comparable[] array,
      final int l, final int h) {
         int i = l;
-        int j = h;
+        int j = h + 1;
         while (true) {
             if (i >= j) {
                 break;
@@ -113,7 +113,7 @@ class Sort {
                 }
             }
             while (low(array[++i], array[l])) {
-                if (i == h) {
+                if (i == h + 1) {
                     break;
                 }
             }
