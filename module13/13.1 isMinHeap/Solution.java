@@ -78,17 +78,21 @@ public final class Solution {
 					for (int j = 0; j < token.length; j++) {
 						inttoken[j] = Integer.parseInt(token[j]);
 					}
-					isMinHeap<Integer> iimh = new isMinHeap<Integer>(inttoken);
+					isMinHeap<Integer> iimh =
+						new isMinHeap<Integer>(inttoken);
 					System.out.println(iimh.isMinimum());
 				}
 			break;
 			case "Float":
-				int num2 = Integer.parseInt(s.nextLine());
+				int num2 =
+					Integer.parseInt(s.nextLine());
 				for (int i = 0; i < num2; i++) {
-					String[] token = s.nextLine().split(",");
+					String[] token
+						= s.nextLine().split(",");
 					Float[] ftoken = new Float[token.length];
 					for (int j = 0; j < token.length; j++) {
-						ftoken[j] = Float.parseFloat(token[j]);
+						ftoken[j] =
+							Float.parseFloat(token[j]);
 					}
 					isMinHeap<Float> ifmh =
 					 new isMinHeap<Float>(ftoken);
@@ -103,7 +107,8 @@ public final class Solution {
 					Double[] dtoken =
 						new Double[token.length];
 					for (int j = 0; j < token.length; j++) {
-						dtoken[j] = Double.parseDouble(token[j]);
+						dtoken[j] =
+							Double.parseDouble(token[j]);
 					}
 					isMinHeap<Double> idmh =
 					 	new isMinHeap<Double>(dtoken);
