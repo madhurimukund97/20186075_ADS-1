@@ -1,11 +1,5 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:5: Type Javadoc comment is missing @param <E> tag. [JavadocType]
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:5:7: Name 'isMinHeap' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:16:19: Parameter arr should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:64: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:68: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:69: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:81: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:7:7: Name 'isMinHeap' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 2 errors.

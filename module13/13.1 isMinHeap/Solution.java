@@ -1,6 +1,8 @@
 import java.util.Scanner;
 /**
  * Class for is minimum heap.
+ *
+ * @param      <E>
  */
 class isMinHeap<E extends Comparable<E>> {
 	/**
@@ -13,7 +15,7 @@ class isMinHeap<E extends Comparable<E>> {
 	 *
 	 * @param      arr   The arr
 	 */
-	isMinHeap(E[] arr) {
+	isMinHeap(final E[] arr) {
 		this.minArray = arr;
 	}
 	/**
@@ -65,8 +67,10 @@ public final class Solution {
 			case "String":
 				int num = Integer.parseInt(s.nextLine());
 				for (int i = 0; i < num; i++) {
-					String[] token = s.nextLine().split(",");
-					isMinHeap<String> imh = new isMinHeap<String>(token);
+					String[] token =
+					s.nextLine().split(",");
+					isMinHeap<String> imh =
+					new isMinHeap<String>(token);
 					System.out.println(imh.isMinimum());
 				}
 			break;
@@ -78,7 +82,8 @@ public final class Solution {
 					Integer[] inttoken =
 					new Integer[token.length];
 					for (int j = 0; j < token.length; j++) {
-					inttoken[j] = Integer.parseInt(token[j]);
+					inttoken[j] =
+					Integer.parseInt(token[j]);
 					}
 					isMinHeap<Integer> iimh =
 					new isMinHeap<Integer>(inttoken);
@@ -117,6 +122,8 @@ public final class Solution {
 					 	new isMinHeap<Double>(dtoken);
 					System.out.println(idmh.isMinimum());
 				}
+			break;
+			default:
 			break;
 		}
 	}
