@@ -95,8 +95,13 @@ public final class Solution {
                 int num2 =
                     Integer.parseInt(s.nextLine());
                 for (int i = 0; i < num2; i++) {
+                    String str = s.nextLine();
+                    if(str.equals("")) {
+                        System.out.println("false");
+                        break;
+                    } else {
                     String[] token
-                        = s.nextLine().split(",");
+                        = str.split(",");
                     Float[] ftoken =
                     new Float[token.length];
                     for (int j = 0; j < token.length; j++) {
@@ -105,6 +110,7 @@ public final class Solution {
                     IsMinHeap<Float> ifmh =
                      new IsMinHeap<Float>(ftoken);
                     System.out.println(ifmh.isMinimum());
+                }
                 }
             break;
             case "Double":
