@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module13\13.1 isMinHeap\Solution.java:99:23: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 1 errors.

@@ -96,7 +96,7 @@ public final class Solution {
                     Integer.parseInt(s.nextLine());
                 for (int i = 0; i < num2; i++) {
                     String str = s.nextLine();
-                    if(str.equals("")) {
+                    if (str.equals("")) {
                         System.out.println("false");
                         break;
                     } else {
