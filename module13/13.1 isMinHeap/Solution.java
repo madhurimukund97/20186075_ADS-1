@@ -51,6 +51,7 @@ class IsMinHeap<E extends Comparable<E>> {
 public final class Solution {
     /**
      * Constructs the object.
+     * Time complexity is 1.
      */
     private Solution() {
         // constructor not used.
@@ -99,8 +100,7 @@ public final class Solution {
                     Float[] ftoken =
                     new Float[token.length];
                     for (int j = 0; j < token.length; j++) {
-                        ftoken[j] =
-                        Float.parseFloat(token[j]);
+                        ftoken[j] = Float.parseFloat(token[j]);
                     }
                     IsMinHeap<Float> ifmh =
                      new IsMinHeap<Float>(ftoken);
