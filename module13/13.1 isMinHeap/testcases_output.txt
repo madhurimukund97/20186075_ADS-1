@@ -6,8 +6,8 @@ true
 false
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at isMinHeap.low(Solution.java:31)
-	at isMinHeap.isMinimum(Solution.java:41)
+	at IsMinHeap.low(Solution.java:31)
+	at IsMinHeap.isMinimum(Solution.java:41)
 	at Solution.main(Solution.java:74)
 ----------------------------------------
 ########## Testcase 1: Passed ##########
@@ -38,8 +38,8 @@ true
 false
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
-	at isMinHeap.low(Solution.java:31)
-	at isMinHeap.isMinimum(Solution.java:41)
+	at IsMinHeap.low(Solution.java:31)
+	at IsMinHeap.isMinimum(Solution.java:41)
 	at Solution.main(Solution.java:90)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -49,8 +49,8 @@ false
 false
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 324
-	at isMinHeap.low(Solution.java:31)
-	at isMinHeap.isMinimum(Solution.java:41)
+	at IsMinHeap.low(Solution.java:31)
+	at IsMinHeap.isMinimum(Solution.java:41)
 	at Solution.main(Solution.java:123)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -60,7 +60,7 @@ true
 false
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at isMinHeap.low(Solution.java:31)
-	at isMinHeap.isMinimum(Solution.java:41)
+	at IsMinHeap.low(Solution.java:31)
+	at IsMinHeap.isMinimum(Solution.java:41)
 	at Solution.main(Solution.java:107)
 ----------------------------------------
