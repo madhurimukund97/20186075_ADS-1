@@ -90,19 +90,23 @@ public final class Solution {
 					for (int j = 0; j < token.length; j++) {
 						ftoken[j] = Float.parseFloat(token[j]);
 					}
-					isMinHeap<Float> ifmh = new isMinHeap<Float>(ftoken);
+					isMinHeap<Float> ifmh =
+					 new isMinHeap<Float>(ftoken);
 					System.out.println(ifmh.isMinimum());
 				}
 			break;
 			case "Double":
 				int num3 = Integer.parseInt(s.nextLine());
 				for (int i = 0; i < num3; i++) {
-					String[] token = s.nextLine().split(",");
-					Double[] dtoken = new Double[token.length];
+					String[] token =
+						s.nextLine().split(",");
+					Double[] dtoken =
+						new Double[token.length];
 					for (int j = 0; j < token.length; j++) {
 						dtoken[j] = Double.parseDouble(token[j]);
 					}
-					isMinHeap<Double> idmh = new isMinHeap<Double>(dtoken);
+					isMinHeap<Double> idmh =
+					 	new isMinHeap<Double>(dtoken);
 					System.out.println(idmh.isMinimum());
 				}
 			break;
