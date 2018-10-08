@@ -35,7 +35,7 @@ class isMinHeap<E extends Comparable<E>> {
 	 * @return     True if minimum, False otherwise.
 	 */
 	public  boolean isMinimum() {
-		for (int i = 0; i < minArray.length; i++) {
+		for (int i = 1; i < minArray.length; i++) {
 			if (low(i + 1, i)) {
 				return false;
 			}
