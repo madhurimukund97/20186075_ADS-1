@@ -65,65 +65,70 @@ public final class Solution {
      * Time complexity is N.
      */
     public static void allotment(final Student[] students,
-                                 int vacancies,
-                                 int noCategry,
-                                 int noBC,
-                                 int noSC,
-                                 int noST) {
+                                 final int vacancies,
+                                 final int noCategry,
+                                 final int noBC,
+                                 final int noSC,
+                                 final int noST) {
         int i = 0;
         int k = 0;
         int n = students.length;
-        Student[] alloted = new Student[vacancies];
+        int v = vacancies;
+        int ct = noCategry;
+        int bc = noBC;
+        int sc = noSC;
+        int st = noST;
+        Student[] alloted = new Student[v];
 
         for (i = 0; i < n; i++) {
-            if (vacancies == 0) {
+            if (v == 0) {
                 break;
             }
 
-            if (noCategry > 0) {
-                noCategry--;
+            if (ct > 0) {
+                ct--;
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
-                vacancies--;
+                v--;
             }
 
-            if (noBC > 0) {
+            if (bc > 0) {
                 if (students[i].getRc().equals("BC")
                     && students[i].getAlloted() != true) {
-                    noBC--;
+                    bc--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
-                    vacancies--;
+                    v--;
                 }
             }
 
-            if (noSC > 0) {
+            if (sc > 0) {
                 if (students[i].getRc().equals("SC")
                     && students[i].getAlloted() != true) {
-                    noSC--;
+                    sc--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
-                    vacancies--;
+                    v--;
                 }
             }
 
-            if (noSC > 0) {
+            if (sc > 0) {
                 if (students[i].getRc().equals("ST")
                     && students[i].getAlloted() != true) {
-                    noST--;
+                    st--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
-                    vacancies--;
+                    v--;
                 }
             }
         }
 
         for (i = 0; i < n; i++) {
-            if (vacancies > 0 && students[i].getRc().equals("Open")
+            if (v > 0 && students[i].getRc().equals("Open")
                 && students[i].getAlloted() == false) {
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
-                vacancies--;
+                v--;
             }
         }
 
