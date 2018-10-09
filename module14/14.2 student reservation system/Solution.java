@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Date;
 import java.text.SimpleDateFormat;
+
 /**
  * Solution class.
  */
@@ -78,10 +79,12 @@ public final class Solution {
         int sc = noSC;
         int st = noST;
         Student[] alloted = new Student[v];
+
         for (i = 0; i < n; i++) {
             if (v == 0) {
                 break;
             }
+
             if (ct > 0) {
                 ct--;
                 students[i].setAlloted(true);
@@ -91,7 +94,7 @@ public final class Solution {
 
             if (bc > 0) {
                 if (students[i].getRc().equals("BC")
-                    && bc > 0) {
+                    && students[i].getAlloted() != true) {
                     bc--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -101,7 +104,7 @@ public final class Solution {
 
             if (sc > 0) {
                 if (students[i].getRc().equals("SC")
-                    && sc > 0) {
+                    && students[i].getAlloted() != true) {
                     sc--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -111,7 +114,7 @@ public final class Solution {
 
             if (sc > 0) {
                 if (students[i].getRc().equals("ST")
-                    && st > 0) {
+                    && students[i].getAlloted() != true) {
                     st--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -122,7 +125,7 @@ public final class Solution {
 
         for (i = 0; i < n; i++) {
             if (v > 0 && students[i].getRc().equals("Open")
-                && ct > 0) {
+                && students[i].getAlloted() == false) {
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
                 v--;
