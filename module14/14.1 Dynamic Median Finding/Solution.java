@@ -16,7 +16,7 @@ class Heapsort {
 	 * Constructs the object.
 	 * Time complexity is 1.
 	 *
-	 * @param      n     { parameter_description }
+	 * @param      num1     { parameter_description }
 	 */
 	Heapsort(final int num1) {
 		arr = new int[num1];
@@ -39,7 +39,7 @@ class Heapsort {
 	 * @param      num   The number
 	 * @param      ind   The ind
 	 */
-	void heap(int num, int ind) {
+	void heap(final int num, final int ind) {
 		int largest = ind;
 		int left = 2 * ind + 1;
 		int right = 2 * ind + 2;
@@ -49,7 +49,7 @@ class Heapsort {
 		if (right < num && arr[right] > arr[largest]) {
 			largest = right;
 		}
-		if(largest != ind) {
+		if (largest != ind) {
 			swapping(ind, largest);
 			heap(num, largest);
 		}
@@ -59,10 +59,10 @@ class Heapsort {
 	 * Time complexity is N.
 	 */
 	void sort() {
-		for(int i = (size / 2) - 1; i >= 0; i--){
+		for (int i = (size / 2) - 1; i >= 0; i--) {
 			heap(size, i);
 		}
-		for(int i = size - 1; i >= 0; i--){
+		for (int i = size - 1; i >= 0; i--) {
 			swapping(0, i);
 			heap(i, 0);
 		}
@@ -74,7 +74,7 @@ class Heapsort {
 	 * @param      i1    I 1
 	 * @param      j1    The j 1
 	 */
-	void swapping(int i1, int j1) {
+	void swapping(final int i1, final int j1) {
 		int temp = arr[i1];
 		arr[i1] = arr[j1];
 		arr[j1] = temp;
@@ -87,7 +87,7 @@ class Heapsort {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	int getitem(int ind) {
+	int getitem(final int ind) {
 		return arr[ind];
 	}
 	/**
@@ -124,10 +124,10 @@ final class Solution {
 			hp.insert(Integer.parseInt(s.nextLine()));
 			int sz = hp.getsize();
 			if ((sz) % 2 == 0) {
-				float med = ((float)hp.getitem((sz - 1) / 2) + (float)hp.getitem(sz / 2)) / 2;
+				float med = ((float) hp.getitem((sz - 1) / 2) + (float) hp.getitem(sz / 2)) / 2;
 				System.out.println(med);
 			} else {
-				float med = (float)hp.getitem((sz - 1) / 2);
+				float med = (float) hp.getitem((sz - 1) / 2);
 				System.out.println(med);
 			}
 		}
