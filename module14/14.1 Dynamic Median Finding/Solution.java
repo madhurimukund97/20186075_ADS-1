@@ -43,7 +43,7 @@ class Heapsort {
 		int largest = ind;
 		int left = 2 * ind;
 		int right = 2 * ind;
-		if (left<num && arr[left] > arr[largest]) {
+		if (left < num && arr[left] > arr[largest]) {
 			largest = left;
 		}
 		if (right < num && arr[right] > arr[largest]) {
@@ -59,10 +59,10 @@ class Heapsort {
 	 * Time complexity is N.
 	 */
 	void sort() {
-		for(int i = (size/2)-1; i>=0; i--){
+		for(int i = (size / 2) - 1; i >= 0; i--){
 			heap(size, i);
 		}
-		for(int i = size-1; i>=0; i--){
+		for(int i = size - 1; i >= 0; i--){
 			swapping(0, i);
 			heap(i, 0);
 		}
@@ -124,10 +124,10 @@ final class Solution {
 			hp.insert(Integer.parseInt(s.nextLine()));
 			int sz = hp.getsize();
 			if ((sz) % 2 == 0) {
-				float med = ((float)hp.getitem((sz - 1)/2) + (float)hp.getitem(sz/2))/2;
+				float med = ((float)hp.getitem((sz - 1) / 2) + (float)hp.getitem(sz / 2)) / 2;
 				System.out.println(med);
 			} else {
-				float med = (float)hp.getitem((sz-1)/2);
+				float med = (float)hp.getitem((sz - 1) / 2);
 				System.out.println(med);
 			}
 		}
