@@ -3,22 +3,20 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 /**
- * Solution class for alloting the seats based on the given
- * criteria.
+ * Solution class.
  */
 public final class Solution {
-
     /**
-     * Default constructor.
+     * Constructs the object.
      * Time complexity is 1.
      */
     private Solution() {
-
+        // default constructor.
     }
-
     /**
-     * main method to demostrate the solution.
-     * @param args the command line arguments.
+     * Client program.
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -28,7 +26,6 @@ public final class Solution {
         int noOfBC = Integer.parseInt(scan.nextLine());
         int noOfSC = Integer.parseInt(scan.nextLine());
         int noOfST = Integer.parseInt(scan.nextLine());
-
         Student[] students = new Student[n];
         for (int k = 0; k < n; k++) {
             String[] tokens = scan.nextLine().split(",");
@@ -39,18 +36,17 @@ public final class Solution {
                 Integer.parseInt(tokens[2 + 2 + 1]),
                 tokens[2 + 2 + 2]);
         }
-
         Heap.sort(students);
         print(students);
 
         allotment(students, vacancies, noCategry, noOfBC,
                   noOfSC, noOfST);
     }
-
     /**
-     * prints the student details to the console.
-     * @param students list.
+     * used to print.
      * Time complexity is N.
+     *
+     * @param      students  The students
      */
     public static void print(final Student[] students) {
         for (Student student : students) {
@@ -58,7 +54,6 @@ public final class Solution {
         }
         System.out.println();
     }
-
     /**
      * Alloting the seats to the students based on merit.
      * @param students  list of students.
@@ -136,8 +131,6 @@ public final class Solution {
         print(alloted);
     }
 }
-
-
 /**
  * Students class that uses Comaprable to sort the student objects.
  * student who got more total marks will be given the priority
@@ -157,7 +150,6 @@ class Student implements Comparable<Student> {
     private int tm;
     private String rc;
     private boolean alloted;
-    
     /**
      * returns true, if the student is already alloted,
      * otherwise false.
@@ -168,7 +160,6 @@ class Student implements Comparable<Student> {
     public boolean getAlloted() {
         return alloted;
     }
-
     /**
      * Changes the alloted status to true once the allotment is done.
      *
@@ -178,7 +169,6 @@ class Student implements Comparable<Student> {
     public void setAlloted(final boolean allot) {
         this.alloted = allot;
     }
-
     /**
      * Gets the data of birth.
      * @return date of birth.
@@ -187,7 +177,6 @@ class Student implements Comparable<Student> {
     public Date getDb() {
         return db;
     }
-
     /**
      * sets the student's date of birth.
      *
@@ -197,7 +186,6 @@ class Student implements Comparable<Student> {
     public void setDb(final Date b) {
         this.db = b;
     }
-
     /**
      * gets the date of birth.
      *
@@ -207,7 +195,6 @@ class Student implements Comparable<Student> {
     public String getRc() {
         return rc;
     }
-
     /**
      * Sets the student's reservation category.
      *
@@ -217,7 +204,6 @@ class Student implements Comparable<Student> {
     public void setRc(final String r) {
         this.rc = r;
     }
-
     /**
      * gets the total marks.
      * @return returns the total marks of the student.
@@ -226,7 +212,6 @@ class Student implements Comparable<Student> {
     public int getTm() {
         return tm;
     }
-
     /**
      * sets the student's total marks.
      *
@@ -236,7 +221,6 @@ class Student implements Comparable<Student> {
     public void setTm(final int m) {
         this.tm = m;
     }
-
     /**
      * Constructs the object based on the parameters.
      *
@@ -267,7 +251,6 @@ class Student implements Comparable<Student> {
         this.rc = rc;
         this.alloted = false;
     }
-
     /**
      * Gets the marks in subject 3.
      *
@@ -277,7 +260,6 @@ class Student implements Comparable<Student> {
     public int getM3() {
         return m3;
     }
-
     /**
      * Sets the m3 to the 3rd subject.
      * Time complexity is 1.
@@ -287,7 +269,6 @@ class Student implements Comparable<Student> {
     public void setM3(final int m) {
         this.m3 = m;
     }
-
     /**
      * Gets the marks in subject 2.
      * Time complexity is 1.
@@ -297,7 +278,6 @@ class Student implements Comparable<Student> {
     public int getM2() {
         return m2;
     }
-
     /**
      * Sets marks in subject 2.
      * Time complexity is 1.
@@ -307,7 +287,6 @@ class Student implements Comparable<Student> {
     public void setM2(final int m) {
         this.m2 = m;
     }
-
     /**
      * Gets the marks in subject 1.
      * @return marks in subject 1.
@@ -316,7 +295,6 @@ class Student implements Comparable<Student> {
     public int getM1() {
         return m1;
     }
-
     /**
      * Sets the marks to subject 1.
      *
@@ -326,7 +304,6 @@ class Student implements Comparable<Student> {
     public void setM1(final int m) {
         this.m1 = m;
     }
-
     /**
      * Gets the student name.
      * @return the student's name.
@@ -335,7 +312,6 @@ class Student implements Comparable<Student> {
     public String getStudentName() {
         return studentName;
     }
-
     /**
      * When required the student's name can be updated.
      * @param student.
@@ -344,7 +320,6 @@ class Student implements Comparable<Student> {
     public void setStudentName(final String student) {
         this.studentName = student;
     }
-
     /**
      * Compares two objects of types students.
      * @param  that second Student.
@@ -378,7 +353,6 @@ class Student implements Comparable<Student> {
         }
         return 0;
     }
-
     /**
      * Gets the String version of the Students.
      * @return String version of object.
@@ -398,12 +372,14 @@ class Student implements Comparable<Student> {
 class Heap {
     /**
      * Constructs the object.
+     * Time complexity is 1.
      */
     private Heap() {
         //Unused Constructor.
     }
     /**
-     * { function_description }
+     * Sink method.
+     * Time complexity is logN.
      *
      * @param      arr    { parameter_description }
      * @param      k     { parameter_description }
@@ -423,7 +399,8 @@ class Heap {
         }
     }
     /**
-     * { function_description }
+     * less method.
+     * Time complexity is 1.
      *
      * @param      arr    { parameter_description }
      * @param      i     { parameter_description }
@@ -435,7 +412,8 @@ class Heap {
         return arr[i - 1].compareTo(arr[j - 1]) < 0;
     }
     /**
-     * { function_description }
+     * used to exchange.
+     * Time complexity is 1.
      *
      * @param      arr    { parameter_description }
      * @param      i     { parameter_description }
@@ -447,7 +425,8 @@ class Heap {
         arr[j - 1] = swap;
     }
     /**
-     * { function_description }
+     * Sort method.
+     * Time complexity is logN.
      *
      * @param      arr    { parameter_description }
      */
