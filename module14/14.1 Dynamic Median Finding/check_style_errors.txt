@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:46:25: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:46:26: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:127: Line is longer than 80 characters (found 112). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
