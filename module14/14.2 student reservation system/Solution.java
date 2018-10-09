@@ -409,17 +409,18 @@ final class Heap {
      * @param      k     { parameter_description }
      * @param      n     { parameter_description }
      */
-    private static void sink(final Comparable[] arr, int k, final int n) {
-        while (2 * k <= n) {
-            int j = 2 * k;
+    private static void sink(final Comparable[] arr, final int k, final int n) {
+        int k1 = k;
+        while (2 * k1 <= n) {
+            int j = 2 * k1;
             if (j < n && less(arr, j, j + 1)) {
                 j++;
             }
-            if (!less(arr, k, j)) {
+            if (!less(arr, k1, j)) {
                 break;
             }
-            exch(arr, k, j);
-            k = j;
+            exch(arr, k1, j);
+            k1 = j;
         }
     }
     /**
