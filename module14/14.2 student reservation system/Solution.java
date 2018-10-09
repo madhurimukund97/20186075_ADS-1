@@ -226,16 +226,16 @@ class Student implements Comparable<Student> {
      *
      * @param      studentName  Student Name
      * @param      dateOfBirth  Date of Birth
-     * @param      m1           Marks in first subject.
-     * @param      m2           Marks in second subject.
-     * @param      m3           Marks in third subject.
-     * @param      tm           Total Marks.
-     * @param      rc           Reservation Category.
+     * @param      m11           Marks in first subject.
+     * @param      m22           Marks in second subject.
+     * @param      m33           Marks in third subject.
+     * @param      tm1           Total Marks.
+     * @param      rc1          Reservation Category.
      * Time complexity is 1.
      */
     Student(final String studentName, final String dateOfBirth,
-                   final int m1, final int m2, final int m3, final int tm,
-                   final String rc) {
+                   final int m11, final int m22, final int m33, final int tm1,
+                   final String rc1) {
         this.studentName = studentName;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
@@ -244,11 +244,11 @@ class Student implements Comparable<Student> {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        this.m1 = m1;
-        this.m2 = m2;
-        this.m3 = m3;
-        this.tm = tm;
-        this.rc = rc;
+        this.m1 = m11;
+        this.m2 = m22;
+        this.m3 = m33;
+        this.tm = tm1;
+        this.rc = rc1;
         this.alloted = false;
     }
     /**
@@ -313,9 +313,10 @@ class Student implements Comparable<Student> {
         return studentName;
     }
     /**
-     * When required the student's name can be updated.
-     * @param student.
+     * Sets the student name.
      * Time complexity is 1.
+     *
+     * @param      student  The student
      */
     public void setStudentName(final String student) {
         this.studentName = student;
@@ -369,7 +370,7 @@ class Student implements Comparable<Student> {
 /**
  * Class for heap.
  */
-class Heap {
+final class Heap {
     /**
      * Constructs the object.
      * Time complexity is 1.
@@ -408,7 +409,8 @@ class Heap {
      *
      * @return     { description_of_the_return_value }
      */
-    private static boolean less(final Comparable[] arr, final int i, final int j) {
+    private static boolean less(final Comparable[] arr,
+        final int i, final int j) {
         return arr[i - 1].compareTo(arr[j - 1]) < 0;
     }
     /**
