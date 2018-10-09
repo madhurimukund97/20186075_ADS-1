@@ -1,10 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:19:8: Unused @param tag for 'n'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:21:24: Expected @param tag for 'num1'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:52:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:62:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:62:49: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:65:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:65:43: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.

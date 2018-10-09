@@ -16,7 +16,7 @@ class Heapsort {
      * Constructs the object.
      * Time complexity is 1.
      *
-     * @param      n     { parameter_description }
+     * @param      num1     { parameter_description }
      */
     Heapsort(final int num1) {
         arr = new int[num1];
@@ -49,7 +49,7 @@ class Heapsort {
         if (right < num && arr[right] > arr[largest]) {
             largest = right;
         }
-        if(largest != ind) {
+        if (largest != ind) {
             swapping(ind, largest);
             heap(num, largest);
         }
@@ -59,10 +59,10 @@ class Heapsort {
      * Time complexity is N.
      */
     public void sort() {
-        for(int i = (size / 2) - 1; i >= 0; i--){
+        for (int i = (size / 2) - 1; i >= 0; i--) {
             heap(size, i);
         }
-        for(int i = size - 1; i >= 0; i--){
+        for (int i = size - 1; i >= 0; i--) {
             swapping(0, i);
             heap(i, 0);
         }
