@@ -125,8 +125,8 @@ public final class Solution {
 
         for (i = 0; i < n; i++) {
             if (v > 0 && students[i].getRc().equals("Open")
-                && students[i].getAlloted() == false) {
-                students[i].setAlloted(true);
+                && students[i].getAlloted()) {
+                students[i].setAlloted(false);
                 alloted[k++] = students[i];
                 v--;
             }
