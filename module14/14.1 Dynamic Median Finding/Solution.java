@@ -41,8 +41,8 @@ class Heapsort {
 	 */
 	void heap(int num, int ind) {
 		int largest = ind;
-		int left = 2 * ind;
-		int right = 2 * ind;
+		int left = 2 * ind + 1;
+		int right = 2 * ind + 2;
 		if (left<num && arr[left] > arr[largest]) {
 			largest = left;
 		}
