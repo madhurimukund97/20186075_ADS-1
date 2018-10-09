@@ -233,9 +233,9 @@ class Student implements Comparable<Student> {
      * @param      rc           Reservation Category.
      * Time complexity is 1.
      */
-    Student(String studentName, String dateOfBirth,
-                   int m1, int m2, int m3, int tm,
-                   String rc) {
+    Student(final String studentName, final String dateOfBirth,
+                   final int m1, final int m2, final int m3, final int tm,
+                   final String rc) {
         this.studentName = studentName;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
@@ -385,7 +385,7 @@ class Heap {
      * @param      k     { parameter_description }
      * @param      n     { parameter_description }
      */
-    private static void sink(Comparable[] arr, int k, int n) {
+    private static void sink(final Comparable[] arr, int k, final int n) {
         while (2 * k <= n) {
             int j = 2 * k;
             if (j < n && less(arr, j, j + 1)) {
@@ -408,7 +408,7 @@ class Heap {
      *
      * @return     { description_of_the_return_value }
      */
-    private static boolean less(Comparable[] arr, int i, int j) {
+    private static boolean less(final Comparable[] arr, final int i, final int j) {
         return arr[i - 1].compareTo(arr[j - 1]) < 0;
     }
     /**
@@ -419,7 +419,7 @@ class Heap {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    private static void exch(Comparable[] arr, int i, int j) {
+    private static void exch(final Comparable[] arr, final int i, final int j) {
         Comparable swap = arr[i - 1];
         arr[i - 1] = arr[j - 1];
         arr[j - 1] = swap;
@@ -430,7 +430,7 @@ class Heap {
      *
      * @param      arr    { parameter_description }
      */
-    public static void sort(Comparable[] arr) {
+    public static void sort(final Comparable[] arr) {
         int n = arr.length;
         for (int k = n / 2; k >= 1; k--) {
             sink(arr, k, n);
