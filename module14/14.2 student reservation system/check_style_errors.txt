@@ -4,14 +4,10 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:70:34: Parameter noBC should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:71:34: Parameter noSC should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:72:34: Parameter noST should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:91:54: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:92:50: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:101:54: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:102:50: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:111:54: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:112:50: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:122:69: '&&' should be on a new line. [OperatorWrap]
-[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:123:46: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:92:49: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:102:49: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:112:49: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:123:45: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] E:\20186075_ADS-1\module14\14.2 student reservation system\Solution.java:407:54: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 10 errors.
