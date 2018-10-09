@@ -1,2 +1,23 @@
 Starting audit...
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:19:12: Unused @param tag for 'n'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:21:28: Expected @param tag for 'num1'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:42:19: Parameter num should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:42:28: Parameter ind should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:46:25: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:46:26: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:52:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:62:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:62:57: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:65:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:65:51: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:77:23: Parameter i1 should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:77:31: Parameter j1 should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:90:21: Parameter ind should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:127: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:127:53: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:127:87: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\20186075_ADS-1\module14\14.1 Dynamic Median Finding\Solution.java:130:52: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
+Checkstyle ends with 20 errors.
