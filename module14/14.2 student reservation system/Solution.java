@@ -137,35 +137,35 @@ public final class Solution {
  */
 class Student implements Comparable<Student> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private String studentName;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Date db;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int m1;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int m2;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int m3;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int tm;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private String rc;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean alloted;
     /**
