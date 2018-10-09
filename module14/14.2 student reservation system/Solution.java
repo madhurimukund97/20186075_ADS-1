@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-
 /**
  * Solution class.
  */
@@ -79,12 +78,10 @@ public final class Solution {
         int sc = noSC;
         int st = noST;
         Student[] alloted = new Student[v];
-
         for (i = 0; i < n; i++) {
             if (v == 0) {
                 break;
             }
-
             if (ct > 0) {
                 ct--;
                 students[i].setAlloted(true);
