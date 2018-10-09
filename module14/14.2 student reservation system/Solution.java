@@ -132,28 +132,46 @@ public final class Solution {
     }
 }
 /**
- * Students class that uses Comaprable to sort the student objects.
- * student who got more total marks will be given the priority
- * if total marks are equal then student who got more marks 
- * in subject 3 will be given the priority. 
- * if subject 3 marks are equal then student who got more marks
- * in subject 2 will be given the priority. 
- * if subject 2 marks are equal then younger student
- * will be given priority.
+ * Class for student.
+ * Time complexity is 1.
  */
 class Student implements Comparable<Student> {
+    /**
+     * { var_description }
+     */
     private String studentName;
+    /**
+     * { var_description }
+     */
     private Date db;
+    /**
+     * { var_description }
+     */
     private int m1;
+    /**
+     * { var_description }
+     */
     private int m2;
+    /**
+     * { var_description }
+     */
     private int m3;
+    /**
+     * { var_description }
+     */
     private int tm;
+    /**
+     * { var_description }
+     */
     private String rc;
+    /**
+     * { var_description }
+     */
     private boolean alloted;
     /**
      * returns true, if the student is already alloted,
      * otherwise false.
-     * 
+     *
      * @return true if alloted, otherwise false.
      * Time complexity is 1.
      */
@@ -224,7 +242,7 @@ class Student implements Comparable<Student> {
     /**
      * Constructs the object based on the parameters.
      *
-     * @param      studentName  Student Name
+     * @param      studentNme  Student Name
      * @param      dateOfBirth  Date of Birth
      * @param      m11           Marks in first subject.
      * @param      m22           Marks in second subject.
@@ -233,10 +251,10 @@ class Student implements Comparable<Student> {
      * @param      rc1          Reservation Category.
      * Time complexity is 1.
      */
-    Student(final String studentName, final String dateOfBirth,
+    Student(final String studentNme, final String dateOfBirth,
                    final int m11, final int m22, final int m33, final int tm1,
                    final String rc1) {
-        this.studentName = studentName;
+        this.studentName = studentNme;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         try {
