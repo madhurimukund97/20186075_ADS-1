@@ -18,7 +18,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * value array.
      */
-    private Value[] vals;
+    private Value[] value;
     /**
      * Integer n = 0.
      */
@@ -31,7 +31,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     BinarySearchST(final int capacity) {
         keys = (Key[]) new Comparable[capacity];
-        vals = (Value[]) new Object[capacity];
+        value = (Value[]) new Object[capacity];
     }
     /**
      * Constructs the object.
@@ -61,9 +61,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         Value[] tempv = (Value[]) new Object[capacity];
         for (int i = 0; i < n; i++) {
             tempk[i] = keys[i];
-            tempv[i] = vals[i];
+            tempv[i] = value[i];
         }
-        vals = tempv;
+        value = tempv;
         keys = tempk;
     }
     /**
@@ -107,7 +107,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         int i = rank(key);
         if (i < n && keys[i].compareTo(key) == 0) {
-            return vals[i];
+            return value[i];
         }
         return null;
     }
@@ -157,7 +157,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
         // key is already in table
         if (i < n && keys[i].compareTo(key) == 0) {
-            vals[i] = val;
+            value[i] = val;
             return;
         }
 
@@ -168,10 +168,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
         for (int j = n; j > i; j--)  {
             keys[j] = keys[j - 1];
-            vals[j] = vals[j - 1];
+            value[j] = value[j - 1];
         }
         keys[i] = key;
-        vals[i] = val;
+        value[i] = val;
         n++;
 
         assert check();
@@ -195,11 +195,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         for (int j = i; j < n - 1; j++)  {
             keys[j] = keys[j + 1];
-            vals[j] = vals[j + 1];
+            value[j] = value[j + 1];
         }
         n--;
         keys[n] = null;  // to avoid loitering
-        vals[n] = null;
+        value[n] = null;
         final int four = 4;
         if (n > 0 && n == keys.length / four) {
             resize(keys.length / 2);
@@ -394,9 +394,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         String s = "";
         int i = 0;
         for (i = 0; i < size() - 1; i++) {
-            s += keys[i] + " " + vals[i] + "\n";
+            s += keys[i] + " " + value[i] + "\n";
         }
-        s += keys[i] + " " + vals[i];
+        s += keys[i] + " " + value[i];
         return s;
     }
 }
