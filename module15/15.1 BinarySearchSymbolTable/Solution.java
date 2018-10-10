@@ -85,7 +85,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -145,7 +146,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public void put(final Key key, final Value val)  {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new IllegalArgumentException(
+                "first argument to put() is null");
         }
         if (val == null) {
             delete(key);
