@@ -8,15 +8,15 @@ import java.util.NoSuchElementException;
  */
 public class MinPQ<Key> implements Iterable<Key> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Key[] pq;
     /**
-     * { item_description }
+     * { item_description }.
      */// store items at indices 1 to n
     private int n; 
     /**
-     * { item_description }
+     * { item_description }.
      */// number of items on priority queue
     private Comparator<Key> comparator;
     /**
@@ -90,7 +90,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      * size method.
      * Time complexity is 1.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public int size() {
         return n;
@@ -100,10 +100,11 @@ public class MinPQ<Key> implements Iterable<Key> {
      * minimum.
      * Time complexity is 1.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public Key min() {
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+        if (isEmpty()) throw new
+            NoSuchElementException("Priority queue underflow");
         return pq[1];
     }
     /**
@@ -138,7 +139,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      * del minimum.
      * Time complexity is 1.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public Key delMin() {
         if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
@@ -150,7 +151,6 @@ public class MinPQ<Key> implements Iterable<Key> {
         assert isMinHeap();
         return min;
     }
-
     /**
      * swim method.
      * Time complexity is logN.
@@ -167,7 +167,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      * sink.
      * Time complexity is N.
      *
-     * @param      k     { parameter_description }
+     * @param      k     { parameter_description }.
      */
     private void sink(int k) {
         while (2*k <= n) {
@@ -264,15 +264,15 @@ public class MinPQ<Key> implements Iterable<Key> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext() { 
-            return !copy.isEmpty();                     
+        public boolean hasNext() {
+            return !copy.isEmpty();
         }
         /**
          * remove.
          * Time complexity is 1.
          */
-        public void remove() { 
-            throw new UnsupportedOperationException(); 
+        public void remove() {
+            throw new UnsupportedOperationException();
         }
         /**
          * next.
