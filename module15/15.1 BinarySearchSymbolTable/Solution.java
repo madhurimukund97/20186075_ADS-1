@@ -337,30 +337,55 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             return rank(hi) - rank(lo);
         }
     }
-
+    /**
+     * check method.
+     * Time complexity is 1.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean check() {
         return isSorted() && rankCheck();
     }
-
-    // are the items in the array in ascending order?
+    /**
+     * Determines if sorted.
+     * Time complexity is N.
+     *
+     * @return     True if sorted, False otherwise.
+     */
     private boolean isSorted() {
         for (int i = 1; i < size(); i++)
             if (keys[i].compareTo(keys[i-1]) < 0) return false;
         return true;
     }
-
-    // check that rank(select(i)) = i
+    /**
+     * rank check.
+     * Time complexity is N.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean rankCheck() {
-        for (int i = 0; i < size(); i++)
-            if (i != rank(select(i))) return false;
-        for (int i = 0; i < size(); i++)
-            if (keys[i].compareTo(select(rank(keys[i]))) != 0) return false;
+        for (int i = 0; i < size(); i++) {
+            if (i != rank(select(i))) {
+                return false;
+            }
+        }
+        for (int i = 0; i < size(); i++) {
+            if (keys[i].compareTo(select(rank(keys[i]))) != 0) {
+                return false;
+            }
+        }
         return true;
     }
+    /**
+     * Returns a string representation of the object.
+     * Time complexity is N.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s = "";
         int i = 0;
-        for(i = 0; i < size() - 1; i++) {
+        for (i = 0; i < size() - 1; i++) {
             s += keys[i] + " " + vals[i] + "\n";
         }
         s += keys[i] + " " + vals[i];

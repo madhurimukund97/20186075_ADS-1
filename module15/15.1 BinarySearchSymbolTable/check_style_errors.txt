@@ -52,18 +52,9 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:323:29: Parameter hi should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:325: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:328: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:341:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:346:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:347: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:348: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:348:41: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:348:42: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:353:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:354: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:355: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:356: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:357: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:360:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:363:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:357:41: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:357:42: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 66 errors.
+Checkstyle ends with 57 errors.
