@@ -120,7 +120,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (key == null) {
             throw new IllegalArgumentException("argument to rank() is null");
         }
-        int lo = 0, hi = n-1;
+        int lo = 0, hi = n - 1;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
             int cmp = key.compareTo(keys[mid]);
@@ -163,7 +163,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
         // insert new key-value pair
         if (n == keys.length) {
-            resize(2*keys.length);
+            resize(2 * keys.length);
         }
 
         for (int j = n; j > i; j--)  {
@@ -193,15 +193,16 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (i == n || keys[i].compareTo(key) != 0) {
             return;
         }
-        for (int j = i; j < n-1; j++)  {
-            keys[j] = keys[j+1];
-            vals[j] = vals[j+1];
+        for (int j = i; j < n - 1; j++)  {
+            keys[j] = keys[j + 1];
+            vals[j] = vals[j + 1];
         }
         n--;
         keys[n] = null;  // to avoid loitering
         vals[n] = null;
-        if (n > 0 && n == keys.length/4) {
-            resize(keys.length/2);
+        final int four = 4;
+        if (n > 0 && n == keys.length / four) {
+            resize(keys.length / 2);
         }
         assert check();
     }
@@ -252,7 +253,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             throw new NoSuchElementException(
                 "called max() with empty symbol table");
         }
-        return keys[n-1];
+        return keys[n - 1];
     }
 
     /**
@@ -294,7 +295,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
     /**
      * ceiling method.
-     * Time complexity is 
+     * Time complexity is 1.
      *
      * @param      key   The key
      *
