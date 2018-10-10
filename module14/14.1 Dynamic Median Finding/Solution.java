@@ -2,11 +2,12 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
+     * Time complexity is 1.
      */
-    private Solution () {
+    private Solution() {
         // constructor not used.
     }
     /**
@@ -14,7 +15,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int num = s.nextInt();
 
@@ -36,7 +37,6 @@ public class Solution {
             }
             if (max.size() - min.size() > 1) {
                 min.insert(max.delMax());
-                
             }
 
             if (min.size() == max.size()) {
