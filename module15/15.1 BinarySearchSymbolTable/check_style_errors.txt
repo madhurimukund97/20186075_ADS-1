@@ -26,16 +26,8 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:203:39: '4' is a magic number. [MagicNumber]
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:204:31: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:204:32: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:237: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:250: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:252:22: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:252:23: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:265: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:271: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:274: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:289:26: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:289:27: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:294: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:297: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:255:22: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:255:23: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:297: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 30 errors.

@@ -221,7 +221,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public void deleteMax() {
         if (isEmpty()) {
-            throw new NoSuchElementException("Symbol table underflow error");
+            throw new NoSuchElementException(
+                "Symbol table underflow error");
         }
         delete(max());
     }
@@ -234,7 +235,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key min() {
         if (isEmpty()) {
-            throw new NoSuchElementException("called min() with empty symbol table");
+            throw new NoSuchElementException(
+                "called min() with empty symbol table");
         }
         return keys[0];
     }
@@ -247,7 +249,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key max() {
         if (isEmpty()) {
-            throw new NoSuchElementException("called max() with empty symbol table");
+            throw new NoSuchElementException(
+                "called max() with empty symbol table");
         }
         return keys[n-1];
     }
@@ -262,18 +265,18 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException("called select() with invalid argument: " + k);
+            throw new IllegalArgumentException(
+                "called select() with invalid argument: " + k);
         }
         return keys[k];
     }
-
     /**
-     * Returns the largest key in this symbol table less than or equal to {@code key}.
+     * floor.
+     * Time complexity is 1.
      *
-     * @param  key the key
-     * @return the largest key in this symbol table less than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      */
     public Key floor(final Key key) {
         if (key == null) {
@@ -286,17 +289,16 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (i == 0) {
             return null;
         } else {
-            return keys[i-1];
+            return keys[i - 1];
         }
     }
-
     /**
-     * Returns the smallest key in this symbol table greater than or equal to {@code key}.
+     * ceiling method.
+     * Time complexity is 
      *
-     * @param  key the key
-     * @return the smallest key in this symbol table greater than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      */
     public Key ceiling(final Key key) {
         if (key == null) {
