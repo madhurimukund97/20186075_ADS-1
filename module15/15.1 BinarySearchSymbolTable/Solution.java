@@ -20,7 +20,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     private Value[] vals;
     /**
-     * Integer n = 0
+     * Integer n = 0.
      */
     private int n = 0;
     /**
@@ -29,7 +29,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      *
      * @param      capacity  The capacity
      */
-    public BinarySearchST(final int capacity) {
+    BinarySearchST(final int capacity) {
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[]) new Object[capacity];
     }
@@ -37,7 +37,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * Constructs the object.
      * Time complexity is 1.
      */
-    public BinarySearchST() {
+    BinarySearchST() {
         this(INIT_CAPACITY);
     }
     /**
@@ -84,7 +84,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @return     { description_of_the_return_value }
      */
     public boolean contains(final Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to contains() is null");
+        }
         return get(key) != null;
     }
     /**
@@ -126,11 +128,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
             int cmp = key.compareTo(keys[mid]);
             if (cmp < 0) {
                  hi = mid - 1;
-            }
-            else if (cmp > 0) {
+            } else if (cmp > 0) {
                 lo = mid + 1;
-            }
-            else {
+            } else {
                 return mid;
             }
         }
@@ -147,12 +147,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (key == null) {
             throw new IllegalArgumentException("first argument to put() is null");
         }
-
         if (val == null) {
             delete(key);
             return;
         }
-
         int i = rank(key);
 
         // key is already in table
@@ -167,8 +165,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
 
         for (int j = n; j > i; j--)  {
-            keys[j] = keys[j-1];
-            vals[j] = vals[j-1];
+            keys[j] = keys[j - 1];
+            vals[j] = vals[j - 1];
         }
         keys[i] = key;
         vals[i] = val;

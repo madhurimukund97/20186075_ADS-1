@@ -1,15 +1,5 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:22: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:32:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:40:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:87: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:87: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:129:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:132:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:88: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:148: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:170:29: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:170:30: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:171:29: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module15\15.1 BinarySearchSymbolTable\Solution.java:171:30: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 2 errors.
