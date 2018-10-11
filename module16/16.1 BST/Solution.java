@@ -188,17 +188,19 @@ public final class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
+		final int three = 3;
+		final int four = 4;
 		Scanner s = new Scanner(System.in);
 		BST bst = new BST();
 		while(s.hasNextLine()) {
 			String[] input = s.nextLine().split(",");
 			switch(input[0]) {
 			 	case "put":
-			 		BookDetails book = new BookDetails(input[1], input[2], input[3]);
-			 		bst.put(book, input[3]);
+			 		BookDetails book = new BookDetails(input[1], input[2], input[three]);
+			 		bst.put(book, input[four]);
 			 	break;
 			 	case "get":
-			 		book = new BookDetails(input[1], input[2], input[3]);
+			 		book = new BookDetails(input[1], input[2], input[three]);
 			 		System.out.println(bst.get(book));
 			 	break;
 			 	default:
