@@ -23,7 +23,8 @@ class BookDetails implements Comparable<BookDetails> {
 	 * @param      authorname1  The authorname 1
 	 * @param      price1       The price 1
 	 */
-	BookDetails(final String bookname1, final String authorname1, final String price1) {
+	BookDetails(final String bookname1,
+		final String authorname1, final String price1) {
 		this.bookname = bookname1;
 		this.authorname = authorname1;
 		this.price = price1;
@@ -198,12 +199,14 @@ public final class Solution {
 			switch (input[0]) {
 			 	case "put":
 			 		BookDetails book = new BookDetails(
-			 			input[1], input[2], input[three]);
+			 			input[1], input[2],
+			 			input[three]);
 			 		bst.put(book, input[four]);
 			 	break;
 			 	case "get":
 			 		book = new BookDetails(
-			 			input[1], input[2], input[three]);
+			 			input[1], input[2],
+			 			input[three]);
 			 		System.out.println(bst.get(book));
 			 	break;
 			 	default:
