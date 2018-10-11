@@ -23,7 +23,7 @@ class BookDetails implements Comparable<BookDetails> {
 	 * @param      authorname1  The authorname 1
 	 * @param      price1       The price 1
 	 */
-	BookDetails(String bookname1, String authorname1, String price1) {
+	BookDetails(final String bookname1, final String authorname1, final String price1) {
 		this.bookname = bookname1;
 		this.authorname = authorname1;
 		this.price = price1;
@@ -63,7 +63,7 @@ class BookDetails implements Comparable<BookDetails> {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int compareTo(BookDetails t) {
+	public int compareTo(final BookDetails t) {
  		return this.getbookname().compareTo(t.getbookname());
  	}
 }
@@ -102,7 +102,7 @@ class BST {
          * @param      key1  The key 1
          * @param      val1  The value 1
          */
-        Node(BookDetails key1, String val1) {
+        Node(final BookDetails key1, final String val1) {
             this.key = key1;
             this.val = val1;
         }
@@ -116,17 +116,17 @@ class BST {
     }
     /**
      * put.
-     * Time complexity is 
+     * Time complexity is 1.
      *
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(BookDetails key, String val) {
+    public void put(final BookDetails key, final String val) {
 			root = put(root, key, val);
 		}
 	/**
 	 * put.
-	 * Time complexity is
+	 * Time complexity is 1.
 	 *
 	 * @param      x     { parameter_description }
 	 * @param      key   The key
@@ -134,7 +134,7 @@ class BST {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Node put(Node x, BookDetails key, String val) {
+	public Node put(final Node x, final BookDetails key, final String val) {
  		if (x == null) {
  			return new Node(key, val);
  		}
@@ -150,16 +150,17 @@ class BST {
 		}
 	/**
 	 * get method.
-	 * Time complexity is 
+	 * Time complexity is N.
 	 *
 	 * @param      key   The key
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public String get(BookDetails key) {
+	public String get(final BookDetails key) {
 		Node x = root;
 		while (x != null) {
-		  	int cmp = key.getbookname().compareTo(x.key.getbookname());
+		  	int cmp = key.getbookname().compareTo(
+		  		x.key.getbookname());
 		 	if (cmp < 0) {
 		 		x = x.left;
 		 	} else if (cmp > 0) {
@@ -192,15 +193,17 @@ public final class Solution {
 		final int four = 4;
 		Scanner s = new Scanner(System.in);
 		BST bst = new BST();
-		while(s.hasNextLine()) {
+		while (s.hasNextLine()) {
 			String[] input = s.nextLine().split(",");
-			switch(input[0]) {
+			switch (input[0]) {
 			 	case "put":
-			 		BookDetails book = new BookDetails(input[1], input[2], input[three]);
+			 		BookDetails book = new BookDetails(
+			 			input[1], input[2], input[three]);
 			 		bst.put(book, input[four]);
 			 	break;
 			 	case "get":
-			 		book = new BookDetails(input[1], input[2], input[three]);
+			 		book = new BookDetails(
+			 			input[1], input[2], input[three]);
 			 		System.out.println(bst.get(book));
 			 	break;
 			 	default:

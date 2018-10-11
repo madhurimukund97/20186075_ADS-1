@@ -1,23 +1,7 @@
 Starting audit...
 [ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:26:21: Parameter bookname1 should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:26:39: Parameter authorname1 should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:26:59: Parameter price1 should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:66:30: Parameter t should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:105:14: Parameter key1 should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:105:32: Parameter val1 should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:119: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:124:21: Parameter key should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:124:38: Parameter val should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:137:25: Parameter x should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:137:33: Parameter key should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:137:50: Parameter val should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:153: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:159:27: Parameter key should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:162: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:195:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:197:31: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:199: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:203: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:26: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:201: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\20186075_ADS-1\module16\16.1 BST\Solution.java:206: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 4 errors.
