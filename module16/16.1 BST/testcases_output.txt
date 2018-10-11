@@ -1,0 +1,26 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+1
+Your Output: 
+6000.0
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+6
+5
+7
+2
+Your Output: 
+800.0
+200.0
+200.0
+400.0
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+null
+7
+Your Output: 
+null
+200.0
+----------------------------------------
