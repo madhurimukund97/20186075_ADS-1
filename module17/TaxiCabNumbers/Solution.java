@@ -6,16 +6,16 @@ class Taxinumber implements Comparable<Taxinumber> {
 	/**
 	 * Integer num1.
 	 */
-	public int num1;
+	private int num1;
 	/**
 	 * Integer num2.
 	 */
-	public int num2;
+	private int num2;
 
 	/**
 	 * Integer sum.
 	 */
-	public int sum;
+	private int sum;
 	/**
 	 * Constructs the object.
 	 * Time complexity is 1.
@@ -25,12 +25,15 @@ class Taxinumber implements Comparable<Taxinumber> {
 		this.num1 = num1;
 		this.num2 = num2;
 	}
-	// public int getnum1() {
-	// 	return this.num1;
-	// }
-	// public int getnum2() {
-	// 	return this.num2;
-	// }
+	public int getnum1() {
+		return this.num1;
+	}
+	public int getnum2() {
+		return this.num2;
+	}
+	public int getsum() {
+		return this.sum;
+	}
 	public int compareTo(Taxinumber t) {
         if (this.sum < t.sum) return -1;
         if (this.sum > t.sum) return +1;
@@ -69,7 +72,7 @@ public final class Solution {
         }
         while (!p.isEmpty()) {
             Taxinumber sn = p.delMin();
-            if (temp == sn.sum) {
+            if (temp == sn.getsum()) {
                 res++;
             } else {
                 res = 0;
@@ -77,13 +80,13 @@ public final class Solution {
             if(res == m - 1) {
                 n--;
                 if (n == 0) {
-                    System.out.println(sn.sum);
+                    System.out.println(sn.getsum());
                     break;
                 }
             }
-            temp = sn.sum;
-            if (sn.num2 < num) {
-                p.insert(new Taxinumber(sn.num1, sn.num2 + 1));
+            temp = sn.getsum();
+            if (sn.getnum2() < num) {
+                p.insert(new Taxinumber(sn.getnum1(), sn.getnum2() + 1));
             }
             }
         }	
