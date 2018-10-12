@@ -19,8 +19,11 @@ class Taxinumber implements Comparable<Taxinumber> {
     /**
      * Constructs the object.
      * Time complexity is 1.
+     *
+     * @param      num1  The number 1
+     * @param      num2  The number 2
      */
-    Taxinumber(int num1, int num2) {
+    Taxinumber(final int num1, final int num2) {
         this.sum = num1 * num1 * num1 + num2 * num2 * num2;
         this.num1 = num1;
         this.num2 = num2;
@@ -60,7 +63,7 @@ class Taxinumber implements Comparable<Taxinumber> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(Taxinumber t) {
+    public int compareTo(final Taxinumber t) {
         if (this.sum < t.sum) {
             return -1;
         } else if (this.sum > t.sum) {
@@ -95,7 +98,7 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        final int num = 600;
+        final int num = 1300;
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int m = s.nextInt();

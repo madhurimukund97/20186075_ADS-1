@@ -1,10 +1,5 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:16: Parameter num1 should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:20: 'num1' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:20: Expected @param tag for 'num1'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:26: Parameter num2 should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:30: 'num2' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:30: Expected @param tag for 'num2'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:63:26: Parameter t should be final. [FinalParameters]
+[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:26:26: 'num1' hides a field. [HiddenField]
+[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:26:42: 'num2' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 2 errors.
