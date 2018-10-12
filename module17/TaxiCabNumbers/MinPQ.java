@@ -8,16 +8,16 @@ import java.util.NoSuchElementException;
  */
 public class MinPQ<Key> implements Iterable<Key> {
     /**
-     * { var_description }.
+     * Key array.
      */
     private Key[] pq;
     /**
-     * { item_description }.
-     */// store items at indices 1 to n
+     * store items at indices 1 to n.
+     */
     private int n; 
     /**
-     * { item_description }.
-     */// number of items on priority queue
+     * number of items on priority queue
+     */
     private Comparator<Key> comparator;
     /**
      * Constructs the object.
