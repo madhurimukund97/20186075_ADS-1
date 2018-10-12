@@ -24,7 +24,7 @@ class Taxinumber implements Comparable<Taxinumber> {
      * @param      num22  The number 2
      */
     Taxinumber(final int num11, final int num22) {
-        this.sum = num1 * num1 * num1 + num2 * num2 * num2;
+        this.sum = num11 * num11 * num11 + num22 * num22 * num22;
         this.num1 = num11;
         this.num2 = num22;
     }
