@@ -264,15 +264,37 @@ public class MaxPQ<Key> implements Iterable<Key> {
         // takes linear time since already in heap order so no keys move.
         // Time complexity is 1.
         public HeapIterator() {
-            if (comparator == null) copy = new MaxPQ<Key>(size());
-            else                    copy = new MaxPQ<Key>(size(), comparator);
-            for (int i = 1; i <= n; i++)
+            if (comparator == null) {
+                copy = new MaxPQ<Key>(size());
+            } else {
+                copy = new MaxPQ<Key>(size(), comparator);
+            }
+            for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i]);
+            }
         }
-
-        public boolean hasNext()  { return !copy.isEmpty();                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
-
+        /**
+         * Determines if it has next.
+         * Time complexity is 1.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext()  { 
+            return !copy.isEmpty();
+        }
+        /**
+         * remove.
+         * Time complexity is 1.
+         */
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+        /**
+         * next.
+         * Time complexity is 1.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Key next() {
             if (!hasNext()) throw new NoSuchElementException();
             return copy.delMax();

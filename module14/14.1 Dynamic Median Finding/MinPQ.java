@@ -123,7 +123,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     }
     /**
      * insert.
-     * Time complexity is 1.
+     * Time complexity is logN.
      *
      * @param      x     { parameter_description }
      */
@@ -137,7 +137,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     }
     /**
      * del minimum.
-     * Time complexity is 1.
+     * Time complexity is logN.
      *
      * @return     { description_of_the_return_value }.
      */
@@ -165,7 +165,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     }
     /**
      * sink.
-     * Time complexity is N.
+     * Time complexity is logN.
      *
      * @param      k     { parameter_description }.
      */
