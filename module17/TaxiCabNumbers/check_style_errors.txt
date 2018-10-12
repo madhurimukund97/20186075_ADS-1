@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:26:26: 'num1' hides a field. [HiddenField]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:26:42: 'num2' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 2 errors.

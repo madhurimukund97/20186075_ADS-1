@@ -20,13 +20,13 @@ class Taxinumber implements Comparable<Taxinumber> {
      * Constructs the object.
      * Time complexity is 1.
      *
-     * @param      num1  The number 1
-     * @param      num2  The number 2
+     * @param      num11  The number 1
+     * @param      num22  The number 2
      */
-    Taxinumber(final int num1, final int num2) {
+    Taxinumber(final int num11, final int num22) {
         this.sum = num1 * num1 * num1 + num2 * num2 * num2;
-        this.num1 = num1;
-        this.num2 = num2;
+        this.num1 = num11;
+        this.num2 = num22;
     }
     /**
      * get method for num1.
