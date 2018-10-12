@@ -62,7 +62,7 @@ public final class Solution {
         int n = s.nextInt();
         int m = s.nextInt();
         int res = 0;
-        int temp = 0;
+        int temp = -1;
         MinPQ<Taxinumber> p = new MinPQ<Taxinumber>();
         for (int i = 0; i <= n; i++) {
             p.insert(new Taxinumber(i, i));
