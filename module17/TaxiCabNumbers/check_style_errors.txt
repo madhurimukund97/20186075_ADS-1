@@ -9,8 +9,6 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:30: Parameter num2 should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:34: 'num2' hides a field. [HiddenField]
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:23:34: Expected @param tag for 'num2'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:28:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:31:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:34:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:34:30: Parameter t should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:35: 'if' construct must use '{}'s. [NeedBraces]
@@ -21,4 +19,4 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:89: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-1\module17\TaxiCabNumbers\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 19 errors.

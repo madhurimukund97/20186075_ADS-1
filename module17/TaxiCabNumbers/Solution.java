@@ -25,12 +25,12 @@ class Taxinumber implements Comparable<Taxinumber> {
 		this.num1 = num1;
 		this.num2 = num2;
 	}
-	public int getnum1() {
-		return this.num1;
-	}
-	public int getnum2() {
-		return this.num2;
-	}
+	// public int getnum1() {
+	// 	return this.num1;
+	// }
+	// public int getnum2() {
+	// 	return this.num2;
+	// }
 	public int compareTo(Taxinumber t) {
         if (this.sum < t.sum) return -1;
         if (this.sum > t.sum) return +1;
@@ -64,7 +64,7 @@ public final class Solution {
         int res = 0;
         int temp = -1;
         MinPQ<Taxinumber> p = new MinPQ<Taxinumber>();
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i <= num; i++) {
             p.insert(new Taxinumber(i, i));
         }
         while (!p.isEmpty()) {
@@ -82,7 +82,7 @@ public final class Solution {
                 }
             }
             temp = sn.sum;
-            if (sn.num2 < n) {
+            if (sn.num2 < num) {
                 p.insert(new Taxinumber(sn.num1, sn.num2 + 1));
             }
             }
