@@ -61,8 +61,10 @@ class QueryData {
 	public int get(String name) {
 		int distinct = 0, words = 0;
 		String str = "";
+		String key = "";
+		int minlen = 0;
         // int minlen = Integer.parseInt();
-        St<String, Double> st = new St<String, Double>();
+        St<String, Integer> st = new St<String, Integer>();
         while (str.isEmpty()) {
             // String key = StdIn.readString();
             if (key.length() < minlen) continue;
@@ -77,20 +79,23 @@ class QueryData {
         }
         String max = "";
         st.put(max, 0);
-        for (String word : st.keys()) {
-            if (st.get(word) > st.get(max))
-                max = word;
-        }
-        StdOut.println(max + " " + st.get(max));
+        // for (String word : ) {
+        //     if (st.get(word) > st.get(max))
+        //         max = word;
+        // }
+        System.out.println(max + " " + st.get(max));
+        return minlen;
     }
     /**
      * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
-	public String intersection() {
+	public String intersection(String name) {
+		String str = "";
 		// if (getname() > getmax())
-		return stock.getname();
+		// return stock.getname();
+		return str;
 	}
 }
 /**
