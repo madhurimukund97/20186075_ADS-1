@@ -420,6 +420,7 @@ class BST {
 public final class Solution {
     /**
      * Constructs the object.
+     * Time complexity is 1.
      */
     private Solution() {
         //constructor not used.
