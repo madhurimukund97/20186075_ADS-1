@@ -119,10 +119,21 @@ class BST {
     BST() {
         root = null;
     }
+    /**
+     * size.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return size(root);
     }
-
+    /**
+     * size.
+     *
+     * @param      n     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private int size(final Node n) {
         if (n == null) {
             return 0;
@@ -133,7 +144,7 @@ class BST {
     /**
      * get method.
      *time complexity is O(logN)
-     * @param      ky   The key
+     * @param      key   The key
      *
      * @return  integer.
      */
@@ -154,8 +165,8 @@ class BST {
     /**
      * put method to insert the key, value.
      *time complexity is O(N)
-     * @param      key   The key
-     * @param      val   The value
+     * @param      ky   The key
+     * @param      value   The value
      */
     public void put(final BookDetails ky, final int value) {
         root = put(root, ky, value);
@@ -230,7 +241,7 @@ class BST {
     /**
      * floor method.
      *
-     * @param      ky   The key
+     * @param      key   The key
      *
      * @return  key
      */
@@ -245,7 +256,7 @@ class BST {
     /**
      *
      *
-     * @param      x     { parameter_description }
+     * @param      n     { parameter_description }
      * @param      key   The key
      *
      * @return     { description_of_the_return_value }
@@ -268,6 +279,13 @@ class BST {
             return n;
         }
     }
+    /**
+     * ceiling using key.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public BookDetails ceiling(final BookDetails key) {
         Node n = ceiling(root, key);
         if (n == null) {
@@ -276,7 +294,14 @@ class BST {
             return n.key;
         }
     }
-
+    /**
+     * ceiling.
+     *
+     * @param      n     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node ceiling(final Node n, final BookDetails key) {
         if (n == null) {
             return null;
@@ -295,10 +320,25 @@ class BST {
         }
         return ceiling(n.right, key);
     }
+    /**
+     * select using key.
+     *
+     * @param      k1    The k 1
+     *
+     * @return     { description_of_the_return_value }
+     */
     public BookDetails select(final int k1) {
         Node x = select(root, k1);
         return x.key;
     }
+    /**
+     * select node and key.
+     *
+     * @param      x     { parameter_description }
+     * @param      k1    The k 1
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node select(final Node x, final int k1) {
         if (x == null) {
             return null;
@@ -312,11 +352,25 @@ class BST {
             return x;
         }
     }
+    /**
+     * rank.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int rank(final BookDetails k) {
         return rank(k, root);
     }
 
-    // Number of keys in the subtree less than key.
+    /**
+     * // Number of keys in the subtree less than key.
+     *
+     * @param      key   The key
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private int rank(final BookDetails key, final Node x) {
         if (x == null) {
             return 0;
