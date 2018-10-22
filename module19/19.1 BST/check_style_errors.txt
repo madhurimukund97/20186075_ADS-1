@@ -1,21 +1,6 @@
 Starting audit...
 [ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:21:8: Unused @param tag for 'bookname'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:22:8: Unused @param tag for 'bookauthor'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:23:8: Unused @param tag for 'bookprice'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:25:30: Expected @param tag for 'bookname1'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:26:30: Expected @param tag for 'authorname1'. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:26:55: Expected @param tag for 'bookprice1'. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:66:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:29: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:30: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:34: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:35: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:50: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:51: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:55: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:67:56: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:108: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:108:74: Expected @param tag for 'size1'. [JavadocMethod]
+[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:110:41: Expected @param tag for 'size1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 3 errors.

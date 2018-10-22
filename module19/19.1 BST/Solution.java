@@ -18,9 +18,9 @@ class BookDetails implements Comparable {
     /**
      * Constructs the object.
      *
-     * @param      bookname    The bookname
-     * @param      bookauthor  The bookauthor
-     * @param      bookprice   The bookprice
+     * @param      bookname1    The bookname
+     * @param      authorname1  The bookauthor
+     * @param      bookprice1   The bookprice
      */
     BookDetails(final String bookname1,
                 final String authorname1, final float bookprice1) {
@@ -64,7 +64,8 @@ class BookDetails implements Comparable {
         return this.bookname.compareTo(t.bookname);
     }
     public String toString() {
-        return getbookName()+", "+getAuthorname()+", "+getbookPrice();
+        return getbookName() + ", "
+        + getAuthorname() + ", " + getbookPrice();
     }
 }
 /**
@@ -105,7 +106,8 @@ class BST {
          * @param      key2   The key
          * @param      value1  The value
          */
-        private Node(final BookDetails key2, final int value1, final int size1) {
+        private Node(final BookDetails key2,
+            final int value1, final int size1) {
             this.key = key2;
             this.value = value1;
             this.size = size1;
