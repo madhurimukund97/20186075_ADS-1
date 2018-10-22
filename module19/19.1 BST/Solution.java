@@ -123,7 +123,7 @@ class BST {
         return size(root);
     }
 
-    private int size(Node n) {
+    private int size(final Node n) {
         if (n == null) {
             return 0;
         } else {
@@ -198,7 +198,7 @@ class BST {
      *
      * @return minimum.
      */
-    private Node min(Node x) {
+    private Node min(final Node x) {
         if (x.left == null) {
             return x;
         } else {
@@ -220,7 +220,7 @@ class BST {
      *
      * @return maximum.
      */
-    private Node maximum(Node n) {
+    private Node maximum(final Node n) {
         if (n.right == null) {
             return n;
         } else {
@@ -234,7 +234,7 @@ class BST {
      *
      * @return  key
      */
-    public BookDetails floor(BookDetails key) {
+    public BookDetails floor(final BookDetails key) {
         Node n = floor(root, key);
         if (n == null) {
             return null;
@@ -250,7 +250,7 @@ class BST {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node floor(Node n, BookDetails key) {
+    private Node floor(final Node n, final BookDetails key) {
         if (n == null) {
             return null;
         }
@@ -268,7 +268,7 @@ class BST {
             return n;
         }
     }
-    public BookDetails ceiling(BookDetails key) {
+    public BookDetails ceiling(final BookDetails key) {
         Node n = ceiling(root, key);
         if (n == null) {
             return null;
@@ -277,7 +277,7 @@ class BST {
         }
     }
 
-    private Node ceiling(Node n, BookDetails key) {
+    private Node ceiling(final Node n, final BookDetails key) {
         if (n == null) {
             return null;
         }
@@ -295,11 +295,11 @@ class BST {
         }
         return ceiling(n.right, key);
     }
-    public BookDetails select(int k1) {
+    public BookDetails select(final int k1) {
         Node x = select(root, k1);
         return x.key;
     }
-    private Node select(Node x, int k1) {
+    private Node select(final Node x, final int k1) {
         if (x == null) {
             return null;
         }
@@ -312,12 +312,12 @@ class BST {
             return x;
         }
     }
-    public int rank(BookDetails k) {
+    public int rank(final BookDetails k) {
         return rank(k, root);
     }
 
     // Number of keys in the subtree less than key.
-    private int rank(BookDetails key, Node x) {
+    private int rank(final BookDetails key, final Node x) {
         if (x == null) {
             return 0;
         }
@@ -339,7 +339,7 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-        //unused constructor.
+        //constructor not used.
     }
     /**
      * main method.
