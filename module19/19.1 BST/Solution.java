@@ -17,6 +17,7 @@ class BookDetails implements Comparable {
     private float bookprice;
     /**
      * Constructs the object.
+     * Time complexity is 1.
      *
      * @param      bookname1    The bookname
      * @param      authorname1  The bookauthor
@@ -30,6 +31,7 @@ class BookDetails implements Comparable {
     }
     /**
      * Gets the name.
+     * Time complexity is 1.
      *
      * @return     The name.
      */
@@ -38,6 +40,7 @@ class BookDetails implements Comparable {
     }
     /**
      * Gets the author.
+     * Time complexity is 1.
      *
      * @return     The author.
      */
@@ -46,6 +49,7 @@ class BookDetails implements Comparable {
     }
     /**
      * Gets the price.
+     * Time complexity is 1.
      *
      * @return     The price.
      */
@@ -54,6 +58,7 @@ class BookDetails implements Comparable {
     }
     /**
      * compare to method that returns integer.
+     * Time complexity is 1.
      *
      * @param      obj  The object
      *
@@ -65,6 +70,7 @@ class BookDetails implements Comparable {
     }
     /**
      * Returns a string representation of the object.
+     * Time complexity is 1.
      *
      * @return     String representation of the object.
      */
@@ -107,6 +113,7 @@ class BST {
         private int size;
         /**
          * Constructs the object.
+         * Time complexity is 1.
          *
          * @param      key2    The key 2
          * @param      value1  The value 1
@@ -123,12 +130,14 @@ class BST {
     }
     /**
      * Constructs the object.
+     * Time complexity is 1.
      */
     BST() {
         root = null;
     }
     /**
      * size.
+     * Time complexity is 1.
      *
      * @return     { description_of_the_return_value }
      */
@@ -137,6 +146,7 @@ class BST {
     }
     /**
      * size.
+     * Time complexity is 1.
      *
      * @param      n     { parameter_description }
      *
@@ -204,6 +214,7 @@ class BST {
     }
     /**
      * min element.
+     * Time complexity is logN.
      *
      * @return minimum.
      */
@@ -212,6 +223,7 @@ class BST {
     }
     /**
      * overloaded constructor.
+     * Time complexity is logN.
      *
      * @param      x Node
      *
@@ -226,6 +238,7 @@ class BST {
     }
     /**
      * maximum element.
+     * Time complexity is logN.
      *
      * @return maximum.
      */
@@ -234,6 +247,7 @@ class BST {
     }
     /**
      * overloaded constructor.
+     * Time complexity is logN.
      *
      * @param      n Node
      *
@@ -248,6 +262,7 @@ class BST {
     }
     /**
      * floor method.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -262,8 +277,8 @@ class BST {
         }
     }
     /**
-     *
-     *
+     * floor.
+     * Time complexity is logN.
      * @param      n     { parameter_description }
      * @param      key   The key
      *
@@ -289,6 +304,7 @@ class BST {
     }
     /**
      * ceiling using key.
+     * Time complexity is logN.
      *
      * @param      key   The key
      *
@@ -304,6 +320,7 @@ class BST {
     }
     /**
      * ceiling.
+     * Time complexity is logN.
      *
      * @param      n     { parameter_description }
      * @param      key   The key
@@ -330,6 +347,7 @@ class BST {
     }
     /**
      * select using key.
+     * Time complexity is logN.
      *
      * @param      k1    The k 1
      *
@@ -341,6 +359,7 @@ class BST {
     }
     /**
      * select node and key.
+     * Time complexity is logN.
      *
      * @param      x     { parameter_description }
      * @param      k1    The k 1
@@ -362,6 +381,7 @@ class BST {
     }
     /**
      * rank.
+     * Time complexity is logN.
      *
      * @param      k     { parameter_description }
      *
@@ -373,6 +393,7 @@ class BST {
 
     /**
      * // Number of keys in the subtree less than key.
+     * Time complexity is logN
      *
      * @param      key   The key
      * @param      x     { parameter_description }
