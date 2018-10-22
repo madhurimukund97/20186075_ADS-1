@@ -63,6 +63,11 @@ class BookDetails implements Comparable {
         BookDetails t = (BookDetails) obj;
         return this.bookname.compareTo(t.bookname);
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return getbookName() + ", "
         + getAuthorname() + ", " + getbookPrice();
@@ -103,8 +108,9 @@ class BST {
         /**
          * Constructs the object.
          *
-         * @param      key2   The key
-         * @param      value1  The value
+         * @param      key2    The key 2
+         * @param      value1  The value 1
+         * @param      size1   The size 1
          */
         private Node(final BookDetails key2,
             final int value1, final int size1) {
