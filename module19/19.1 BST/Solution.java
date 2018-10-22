@@ -354,7 +354,7 @@ public final class Solution {
             switch (token[0]) {
             case "put":
                 BookDetails book = new BookDetails(token[1],
-                                                    token[2], Float.parseFloat(token[2 + 1]));
+                token[2], Float.parseFloat(token[2 + 1]));
                 bst.put(book, Integer.parseInt(token[2 + 2]));
             break;
             case "max":
@@ -365,7 +365,7 @@ public final class Solution {
             break;
             case "get":
                 book = new BookDetails(token[1], token[2],
-                                        Float.parseFloat(token[2 + 1]));
+                        Float.parseFloat(token[2 + 1]));
                 if (bst.get(book) == -1) {
                     System.out.println("null");
                 } else {
@@ -373,16 +373,18 @@ public final class Solution {
                 }
             break;
             case "select":
-                System.out.println(bst.select(Integer.parseInt(token[1])));
+                System.out.println(bst.select(
+                    Integer.parseInt(token[1])));
             break;
             case "floor":
                 book = new BookDetails(token[1],
-                                        token[2], Float.parseFloat(token[2 + 1]));
+                    token[2], Float.parseFloat(token[2 + 1]));
                 System.out.println(bst.floor(book));
             break;
             case "ceiling":
                 book = new BookDetails(token[1],
-                                        token[2], Float.parseFloat(token[2 + 1]));
+                                        token[2],
+                                Float.parseFloat(token[2 + 1]));
                 System.out.println(bst.ceiling(book));
             break;
             default:

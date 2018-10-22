@@ -50,8 +50,5 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:320:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:320:22: Parameter key should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:320:39: Parameter x should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:357: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:380: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\20186075_ADS-1\module19\19.1 BST\Solution.java:385: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 54 errors.
+Checkstyle ends with 51 errors.
