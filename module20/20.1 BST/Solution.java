@@ -145,43 +145,15 @@ class BST {
     public int size() {
         return size(root);
     }
+    /**
+     * Determines if empty.
+     * Time complexity is 1.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return size() == 0;
     }
-    // private boolean check() {
-    //     if (!isBST())            
-    //         System.out.println("Not in symmetric order");
-    //     if (!isSizeConsistent()) 
-    //         System.out.println("Subtree counts not consistent");
-    //     if (!isRankConsistent()) 
-    //         System.out.println("Ranks not consistent");
-    //     return isBST() && isSizeConsistent() && isRankConsistent();
-    // }
-    // private boolean isBST(Node x, BookDetails min, BookDetails max) {
-    //     if (x == null) return true;
-    //     if (min != null && x.key.compareTo(min) <= 0) return false;
-    //     if (max != null && x.key.compareTo(max) >= 0) return false;
-    //     return isBST(x.left, min, x.key) && isBST(x.right, x.key, max);
-    // } 
-
-    // // are the size fields correct?
-    // private boolean isSizeConsistent() { 
-    //     return isSizeConsistent(root); 
-    // }
-    // private boolean isSizeConsistent(Node x) {
-    //     if (x == null) return true;
-    //     if (x.size != size(x.left) + size(x.right) + 1) return false;
-    //     return isSizeConsistent(x.left) && isSizeConsistent(x.right);
-    // } 
-
-    // // check that ranks are consistent
-    // private boolean isRankConsistent() {
-    //     for (int i = 0; i < size(); i++)
-    //         if (i != rank(select(i))) return false;
-    //     for (BookDetails key : keys())
-    //         if (key.compareTo(select(rank(key))) != 0) return false;
-    //     return true;
-    // }
     /**
      * size.
      * Time complexity is 1.
@@ -453,6 +425,9 @@ class BST {
             return size(x.left);
         }
     }
+    /**
+     * delete min.
+     */
     public void deleteMin() {
         if (isEmpty()) {
             throw new NoSuchElementException("Symbol table underflow");
@@ -460,7 +435,13 @@ class BST {
         root = deleteMin(root);
         // assert check();
     }
-
+    /**
+     * delete minimum element.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node deleteMin(final Node x) {
         if (x.left == null) {
             return x.right;
@@ -471,9 +452,7 @@ class BST {
     }
 
     /**
-     * Removes the largest key and associated value from the symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
+     * deletemax().
      */
     public void deleteMax() {
         if (isEmpty()) {
@@ -482,7 +461,13 @@ class BST {
         root = deleteMax(root);
         // assert check();
     }
-
+    /**
+     * deletemax.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node deleteMax(final Node x) {
         if (x.right == null) {
             return x.left;
@@ -493,11 +478,9 @@ class BST {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table     
-     * (if the key is in this symbol table).    
+     * delete.
      *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
      */
     public void delete(final BookDetails key) {
         if (key == null) {
@@ -506,7 +489,14 @@ class BST {
         root = delete(root, key);
         // assert check();
     }
-
+    /**
+     * delete.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node delete(final Node x, final BookDetails key) {
         Node x1 = x;
         if (x1 == null) {

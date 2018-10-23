@@ -1,18 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:148:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:152: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:154: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:156: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:165: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:168: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:169: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:175: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:456:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:464:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:486:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:496: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:496: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:497: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:510:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 15 errors.
