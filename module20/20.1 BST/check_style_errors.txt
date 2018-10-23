@@ -9,17 +9,10 @@ Starting audit...
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:175: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:456:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:464:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:464:28: Parameter x should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:486:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:486:28: Parameter x should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:496: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:496: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:497: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:502:24: Parameter key should be final. [FinalParameters]
 [ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:510:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:510:25: Parameter x should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:510:33: Parameter key should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:511: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\20186075_ADS-1\module20\20.1 BST\Solution.java:518: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 15 errors.
