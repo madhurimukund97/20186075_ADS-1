@@ -20,7 +20,7 @@ public final class Solution {
         = new SeparateChainingHashST<String, Integer>();
         String[] length = s.nextLine().split(" ");
         String[] str = s.nextLine().split(" ");
-        for (int i = 1; i < str.length + 1; i++) {
+        for (int i = 0; i < str.length + 1; i++) {
             if (obj.contains(str[i])) {
                 obj.put(str[i], obj.get(str[i]) + 1);
             } else {
