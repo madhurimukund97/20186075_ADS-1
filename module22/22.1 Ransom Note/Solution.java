@@ -22,7 +22,7 @@ public final class Solution {
         String[] str = s.nextLine().split(" ");
         for (int i = 1; i < str.length + 1; i++) {
             if (obj.contains(str[i])) {
-                obj.put(str[i], obj.get(str[i]));
+                obj.put(str[i], obj.get(str[i]) + 1);
             } else {
                 obj.put(str[i], 1);
             }
