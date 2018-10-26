@@ -34,7 +34,7 @@ public final class Solution {
                 } catch (Exception ex) {
                     System.out.println("{}");
                 }
-                
+                break;
             case "delete" :
                 obj.delete(tok[1]);
                 break;
