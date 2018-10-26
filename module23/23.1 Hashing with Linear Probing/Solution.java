@@ -29,8 +29,12 @@ public final class Solution {
                 System.out.println(obj.get(tok[1]));
                 break;
             case "display" :
-                System.out.println(obj.display());
-                break;
+                try {
+                    System.out.println(obj.display());
+                } catch (Exception ex) {
+                    System.out.println("{}");
+                }
+                
             case "delete" :
                 obj.delete(tok[1]);
                 break;
