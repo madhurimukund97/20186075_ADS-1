@@ -28,7 +28,6 @@ class Solution {
 				} else {
 					System.out.println(Integer.parseInt(tok[1]));
 				}
-				System.out.println();
 			}
 		}
 			
