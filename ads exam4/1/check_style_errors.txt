@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] E:\20186075_ADS-1\ads exam4\1\Solution.java:17:29: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] E:\20186075_ADS-1\ads exam4\1\Solution.java:17:30: Parameter args should be final. [FinalParameters]
-[ERROR] E:\20186075_ADS-1\ads exam4\1\Solution.java:19:40: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\20186075_ADS-1\ads exam4\1\Solution.java:21:40: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 4 errors.

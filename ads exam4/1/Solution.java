@@ -14,11 +14,11 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main (String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        SeparateChainingHashST<Integer,String>
+        SeparateChainingHashST<Integer, String>
         obj = new SeparateChainingHashST<>();
-        SeparateChainingHashST<Integer,Double>
+        SeparateChainingHashST<Integer, Double>
         obj1 = new SeparateChainingHashST<>();
         int number = Integer.parseInt(s.nextLine());
         for (int i = 0; i < number; i++) {
