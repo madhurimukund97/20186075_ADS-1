@@ -56,6 +56,9 @@ Abegg
 Brian Caffrey
 Your Output: 
 
+Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
+	at MaxPQ.delMax(MaxPQ.java:155)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -122,7 +125,9 @@ Neil Cadigan
 Megon
 Meili Cady
 Your Output: 
-
+Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
+	at MinPQ.delMin(MinPQ.java:145)
+	at Solution.main(Solution.java:54)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -841,5 +846,7 @@ Marianna Palk
 Thelma Page
 Vicky Hales-Dutton
 Your Output: 
-
+Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
+	at MaxPQ.delMax(MaxPQ.java:155)
+	at Solution.main(Solution.java:51)
 ----------------------------------------

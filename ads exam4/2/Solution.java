@@ -38,8 +38,9 @@ public final class Solution {
                 Double.parseDouble(tokens[2]));
         }
         int number1 = Integer.parseInt(s.nextLine());
-        // MinPQ<Student> min = new MinPQ<Student>();
-        // MaxPQ<Student> max = new MaxPQ<Student>();
+        MinPQ min = new MinPQ();
+        MaxPQ max = new MaxPQ();
+
         for (int i = 0; i < number1; i++) {
             String[] tok = s.nextLine().split(" ");
             switch (tok[0]) {
@@ -47,10 +48,10 @@ public final class Solution {
                 System.out.println();
                 break;
                 case "GE":
-                System.out.println();
+                System.out.println(max.delMax());
                 break;
                 case "LE":
-                System.out.println();
+                System.out.println(min.delMin());
                 break;
                 default:
                 break;
