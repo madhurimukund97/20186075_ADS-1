@@ -27,6 +27,7 @@ public final class Solution {
             obj1.put(Integer.parseInt(tokens[0]),
                 Double.parseDouble(tokens[2]));
         }
+         
         int number1 = Integer.parseInt(s.nextLine());
         for (int i = 0; i < number1; i++) {
             String[] tok = s.nextLine().split(" ");
