@@ -81,10 +81,10 @@ Your Output:
 132
 13
 88
-Student doesnot exist
-Student doesnot exist
-Student doesnot exist
-Student doesnot exist
+Student doesn't exists...
+Student doesn't exists...
+Student doesn't exists...
+Student doesn't exists...
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -920,7 +920,7 @@ Your Output:
 10193
 10158
 10183
-Student doesnot exist
+Student doesn't exists...
 10134
 10029
 10138
@@ -961,7 +961,7 @@ Student doesnot exist
 10057
 10037
 10081
-Student doesnot exist
+Student doesn't exists...
 10075
 10168
 10055
@@ -1041,7 +1041,7 @@ Student doesnot exist
 10119
 10030
 10006
-Student doesnot exist
+Student doesn't exists...
 10010
 10165
 10198

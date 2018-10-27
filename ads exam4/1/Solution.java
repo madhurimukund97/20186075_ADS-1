@@ -18,13 +18,13 @@ class Solution {
 			String[] tok = s.nextLine().split(" ");
 			if (tok[0].equals("get") && tok[2].equals("1")) {
 				if (obj.get(Integer.parseInt(tok[1])) == null) {
-					System.out.println("Student doesnot exist");
+					System.out.println("Student doesn't exists...");
 				} else {
 					System.out.println(Integer.parseInt(tok[1]));
 				}
 			} else if (tok[0].equals("get") && tok[2].equals("2")) {
 				if (obj1.get(Integer.parseInt(tok[1])) == null) {
-					System.out.println("Student doesnot exist");
+					System.out.println("Student doesn't exists...");
 				} else {
 					System.out.println(Integer.parseInt(tok[1]));
 				}
