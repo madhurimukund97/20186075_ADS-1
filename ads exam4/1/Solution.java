@@ -16,13 +16,16 @@ public final class Solution {
      */
     public static void main (String[] args) {
         Scanner s = new Scanner(System.in);
-        SeparateChainingHashST<Integer,String> obj = new SeparateChainingHashST<>();
-        SeparateChainingHashST<Integer,Double> obj1 = new SeparateChainingHashST<>();
+        SeparateChainingHashST<Integer,String>
+        obj = new SeparateChainingHashST<>();
+        SeparateChainingHashST<Integer,Double>
+        obj1 = new SeparateChainingHashST<>();
         int number = Integer.parseInt(s.nextLine());
         for (int i = 0; i < number; i++) {
             String[] tokens = s.nextLine().split(",");
             obj.put(Integer.parseInt(tokens[0]), tokens[1]);
-            obj1.put(Integer.parseInt(tokens[0]), Double.parseDouble(tokens[2]));    
+            obj1.put(Integer.parseInt(tokens[0]),
+                Double.parseDouble(tokens[2]));
         }
         int number1 = Integer.parseInt(s.nextLine());
         for (int i = 0; i < number1; i++) {
