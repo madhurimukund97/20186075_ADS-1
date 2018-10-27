@@ -26,7 +26,7 @@ class Solution {
 				if (obj1.get(Integer.parseInt(tok[1])) == null) {
 					System.out.println("Student doesn't exists...");
 				} else {
-					System.out.println(Integer.parseInt(tok[1]));
+					System.out.println(Integer.parseInt(tok[2]));
 				}
 			}
 		}
